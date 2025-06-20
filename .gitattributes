@@ -5,5 +5,5 @@
 *.tsx text eol=lf
 *.css text eol=lf
 *.html text eol=lf
-*.png -text
-*.jpg -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
