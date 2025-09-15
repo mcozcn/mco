@@ -1,0 +1,2609 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-lang="title">MÜCAHİT ÖZCAN – Dijital Dönüşüm Uzmanı ve Stratejik Proje Lideri</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#A3BFFA',secondary:'#4C6EF5',background:'#0A1F44',text:'#E0E7FF'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&family=Open+Sans:wght@300;400;600&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+:root {
+  --primary: #A3BFFA;
+  --secondary: #4C6EF5;
+  --background: #0A1F44;
+  --text: #E0E7FF;
+}
+body.light {
+  background: linear-gradient(135deg, #E6F0FA 0%, #0A1F44 100%);
+  color: #0A1F44;
+}
+body.light .glass-card,
+body.light .stat-card,
+body.light .project-card,
+body.light .skill-card {
+  background: rgba(255,255,255,0.7) !important;
+  color: #0A1F44 !important;
+}
+body.light .nav-link,
+body.light .brand-name .name-part,
+body.light .brand-name .highlight-part {
+  color: #0A1F44 !important;
+}
+body.light .view-link {
+  background-color: #4C6EF5;
+  color: #fff;
+}
+body.light .view-link:hover {
+  background-color: #A3BFFA;
+  color: #0A1F44;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #0A1F44 0%, #E6F0FA 100%);
+    color: #E0E7FF;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Exo 2', sans-serif;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -5px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, #A3BFFA, #4C6EF5);
+}
+.timeline-item:first-child::before {
+    top: 24px;
+}
+.timeline-item:last-child::before {
+    height: 24px;
+}
+.timeline-dot {
+    position: absolute;
+    left: -9px;
+    top: 24px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #A3BFFA;
+}
+.skill-card {
+    position: relative;
+    transform: rotate(-2deg);
+    transition: all 0.4s ease;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom right, #A3BFFA, #4C6EF5) 1;
+    background: rgba(30, 41, 59, 0.9);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.skill-card:hover {
+    transform: rotate(0) translateY(-10px);
+    box-shadow: 0 12px 30px rgba(163, 191, 250, 0.3);
+}
+.skill-card .icon {
+    background: linear-gradient(to right, #A3BFFA, #4C6EF5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: rgba(163, 191, 250, 0.5);
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(163, 191, 250, 0.3);
+    pointer-events: none;
+}
+.wave-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    overflow: hidden;
+}
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(163, 191, 250, 0.2) 0%, rgba(76, 110, 245, 0.3) 100%);
+    mask: radial-gradient(circle at center, transparent 30%, black 70%);
+    -webkit-mask: radial-gradient(circle at center, transparent 30%, black 70%);
+}
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at center, rgba(163, 191, 250, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+.line {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    stroke: rgba(163, 191, 250, 0.5);
+    stroke-width: 1;
+    fill: none;
+    z-index: -1;
+}
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(163, 191, 250, 0.5);
+    box-shadow: 0 0 8px rgba(163, 191, 250, 0.3);
+    pointer-events: none;
+    transition: transform 0.1s ease;
+}
+.sticky-nav {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(10, 31, 68, 0.8);
+}
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+.project-card {
+    transition: all 0.3s ease;
+    background: rgba(30, 41, 59, 0.9);
+}
+.project-card:hover {
+    transform: scale(1.03);
+}
+.nav-link {
+    position: relative;
+}
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #A3BFFA;
+    transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+.nav-link.active::after {
+    width: 100%;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #A3BFFA;
+}
+.glass-card {
+    background: rgba(30, 58, 138, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(191, 219, 254, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+.stat-card {
+    background: rgba(30, 58, 138, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(191, 219, 254, 0.1);
+    transition: all 0.3s ease;
+}
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.metric-card {
+    background: linear-gradient(135deg, rgba(163, 191, 250, 0.3) 0%, rgba(76, 110, 245, 0.4) 100%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 8px;
+}
+.progress-bar {
+    height: 4px;
+    background: rgba(191, 219, 254, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+}
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #A3BFFA, #BFDBFE);
+    border-radius: 2px;
+}
+@keyframes float {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+.logo-img {
+    width: 60px;
+    height: 50px;
+}
+.view-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #A3BFFA;
+    color: #0A1F44;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+.view-link:hover {
+    background-color: #91A7E4;
+}
+.brand-name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.brand-name .name-part {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #E0E7FF;
+}
+.brand-name .highlight-part {
+    font-size: 1.5rem;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    color: #A3BFFA; /* Sarı yerine açık mavi tonu */
+}
+.contact-button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(163, 191, 250, 0.5);
+}
+.hero-name {
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    margin-top: 1rem;
+}
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+.contact-info a {
+    transition: color 0.3s ease;
+}
+.language-selector {
+    position: relative;
+}
+.language-button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: linear-gradient(to right, #A3BFFA, #4C6EF5);
+    color: #0A1F44;
+    border-radius: 8px;
+    font-weight: medium;
+    transition: all 0.3s ease;
+}
+.language-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(163, 191, 250, 0.5);
+}
+.language-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: #1E3A8A;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 50;
+    min-width: 150px;
+    padding: 0.5rem 0;
+}
+.language-menu.show {
+    display: block;
+}
+.language-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    color: #E0E7FF;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.language-item:hover {
+    background: #A3BFFA;
+    color: #0A1F44;
+}
+.language-flag {
+    font-size: 1.25rem;
+}
+@media (max-width: 768px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .hero-name, h1, h2, h3 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+        word-break: break-word;
+        overflow-wrap: break-word;
+    }
+    p, .text-lg, .text-xl {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+    .project-card {
+        margin-bottom: 1rem;
+    }
+    .project-card img {
+        object-fit: cover;
+        height: 150px;
+    }
+    .project-card p, .project-card h3 {
+        font-size: 0.9rem;
+    }
+    .brand-name {
+        font-size: 1rem;
+    }
+    .brand-name .name-part, .brand-name .highlight-part {
+        font-size: 1rem;
+    }
+    .logo-img {
+        width: 40px;
+        height: 30px;
+    }
+    .language-button {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.8rem;
+    }
+    .skill-card {
+        transform: scale(0.9);
+    }
+    .skill-card h3 {
+        font-size: 0.9rem;
+    }
+    .skill-card p {
+        font-size: 0.7rem;
+    }
+    #mobileMenu {
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    .grid-cols-2, .grid-cols-3, .grid-cols-4 {
+        grid-template-columns: 1fr;
+    }
+    .md\\:flex-row {
+        flex-direction: column;
+    }
+    .md\\:w-1\\/2 {
+        width: 100%;
+    }
+    h1[data-lang="hero-title"] {
+        font-size: 1.75rem; /* Artırılmış font boyutu */
+        line-height: 1.5;
+        text-align: center;
+        max-width: 100%; /* Taşmayı önlemek için */
+        word-wrap: break-word;
+    }
+    h1[data-lang="hero-title"] span {
+        display: block; /* Her kelimeyi ayrı satırda */
+        margin-bottom: 0.25rem;
+    }
+    h1[data-lang="hero-title"] br {
+        display: none; /* <br> yerine span ile kontrol */
+    }
+}
+@media (min-width: 769px) {
+    h1[data-lang="hero-title"] span {
+        display: inline;
+    }
+    h1[data-lang="hero-title"] br {
+        display: inline;
+    }
+}
+@media (max-width: 480px) {
+    .hero-name, h1, h2, h3 {
+        font-size: 1.2rem;
+    }
+    .project-card img {
+        height: 120px;
+    }
+    .language-menu {
+        min-width: 120px;
+    }
+    .language-item {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+    h1[data-lang="hero-title"] {
+        font-size: 1.5rem; /* Daha küçük ekranlarda biraz küçültme */
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .star, .particle, .wave, .particles, .line {
+        animation: none !important;
+        transform: none !important;
+    }
+}
+/* Daha canlı hover animasyonları */
+.button-animate, .contact-button, .view-link, .language-button {
+  transition: transform 0.2s cubic-bezier(.4,2,.6,1), box-shadow 0.2s cubic-bezier(.4,2,.6,1);
+}
+.button-animate:hover, .contact-button:hover, .view-link:hover, .language-button:hover {
+  transform: scale(1.07) rotate(-1deg);
+  box-shadow: 0 8px 32px rgba(163,191,250,0.25);
+}
+.skill-card, .project-card {
+  transition: transform 0.3s cubic-bezier(.4,2,.6,1), box-shadow 0.3s cubic-bezier(.4,2,.6,1);
+}
+.skill-card:hover, .project-card:hover {
+  transform: scale(1.04) rotate(-1deg);
+  box-shadow: 0 12px 40px rgba(76,110,245,0.18);
+}
+/* Kart ve kutucuklara animasyonlar */
+.stat-card, .skill-card, .project-card, .timeline-item, .glass-card, .bg-gray-900 {
+  opacity: 0;
+  transform: translateY(40px) scale(0.98);
+  transition: opacity 0.7s cubic-bezier(.4,2,.6,1), transform 0.7s cubic-bezier(.4,2,.6,1), box-shadow 0.3s cubic-bezier(.4,2,.6,1), border-color 0.3s, background 0.3s;
+}
+.stat-card.active, .skill-card.active, .project-card.active, .timeline-item.active, .glass-card.active, .bg-gray-900.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  box-shadow: 0 8px 32px rgba(76,110,245,0.10);
+}
+.stat-card:hover, .skill-card:hover, .project-card:hover, .timeline-item:hover, .glass-card:hover, .bg-gray-900:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 16px 48px rgba(76,110,245,0.18);
+  border-color: #4C6EF5;
+  background: rgba(76,110,245,0.10);
+}
+.skill-card .icon, .stat-card .icon, .project-card .icon {
+  transition: transform 0.4s cubic-bezier(.4,2,.6,1), filter 0.3s;
+}
+.skill-card:hover .icon, .stat-card:hover .icon, .project-card:hover .icon {
+  transform: scale(1.15);
+  filter: brightness(1.2) drop-shadow(0 2px 8px #A3BFFA66);
+}
+/* Gradient başlık ve underline */
+.section-title {
+  background: linear-gradient(90deg, #A3BFFA 0%, #4C6EF5 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+}
+.section-title-underline {
+  display: block;
+  height: 4px;
+  width: 80px;
+  margin: 0.5rem auto 1.5rem auto;
+  background: linear-gradient(90deg, #A3BFFA 0%, #4C6EF5 100%);
+  border-radius: 2px;
+  animation: underline-grow 1.2s cubic-bezier(.4,2,.6,1);
+}
+@keyframes underline-grow {
+  0% { width: 0; opacity: 0; }
+  100% { width: 80px; opacity: 1; }
+}
+/* Scroll reveal varyasyonları */
+.scroll-reveal-left { opacity: 0; transform: translateX(-60px); transition: opacity 0.7s, transform 0.7s; }
+.scroll-reveal-right { opacity: 0; transform: translateX(60px); transition: opacity 0.7s, transform 0.7s; }
+.scroll-reveal-up { opacity: 0; transform: translateY(60px); transition: opacity 0.7s, transform 0.7s; }
+.scroll-reveal-down { opacity: 0; transform: translateY(-60px); transition: opacity 0.7s, transform 0.7s; }
+.scroll-reveal-left.active, .scroll-reveal-right.active, .scroll-reveal-up.active, .scroll-reveal-down.active { opacity: 1; transform: translate(0,0); }
+/* About arka plan blob */
+.about-blob-bg {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  z-index: 0;
+  opacity: 0.18;
+  pointer-events: none;
+}
+/* Bölüm arka planları */
+.about-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(135deg, #A3BFFA 0%, #E6F0FA 100%);
+  opacity: 0.18;
+  pointer-events: none;
+}
+.experience-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(circle at 80% 20%, #4C6EF5 0%, transparent 70%), linear-gradient(135deg, #0A1F44 0%, #A3BFFA 100%);
+  opacity: 0.13;
+  pointer-events: none;
+}
+.projects-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(120deg, #4C6EF5 0%, #A3BFFA 100%);
+  opacity: 0.10;
+  pointer-events: none;
+}
+.skills-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(circle at 20% 80%, #A3BFFA 0%, transparent 70%), linear-gradient(135deg, #E0E7FF 0%, #4C6EF5 100%);
+  opacity: 0.13;
+  pointer-events: none;
+}
+.contact-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(135deg, #4C6EF5 0%, #0A1F44 100%);
+  opacity: 0.10;
+  pointer-events: none;
+}
+/* Bölümler arası geçişler için sade SVG dalga */
+.section-divider {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.section-divider svg {
+  display: block;
+  width: 100%;
+  height: 60px;
+}
+</style>
+</head>
+<body lang="tr">
+<!-- Ana wave-bg ve vanta-bg kaldırıldı -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const starCount = window.innerWidth < 768 ? 50 : 100;
+    for (let i = 0; i < starCount; i++) {
+        const star = document.createElement('div');
+        star.classList.add('star');
+        star.style.left = `${Math.random() * 100}%`;
+        star.style.top = `${Math.random() * 100}%`;
+        star.style.opacity = Math.random() * 0.5 + 0.2;
+        document.body.appendChild(star);
+    }
+});
+</script>
+<nav class="sticky-nav fixed top-0 left-0 w-full z-50 transition-all duration-300">
+<div class="container mx-auto px-4 py-4 flex justify-between items-center">
+<div class="brand-name">
+<img src="images/logo.png" alt="MÜCAHİT ÖZCAN Logo" class="logo-img">
+<span class="name-part">MÜCAHİT</span><span class="highlight-part">ÖZCAN</span>
+</div>
+<div class="flex items-center gap-4">
+<div class="hidden md:flex space-x-8">
+<a href="#home" class="nav-link text-E0E7FF hover:text-A3BFFA transition-all" data-lang="nav-home">Anasayfa</a>
+<a href="#about" class="nav-link text-E0E7FF hover:text-A3BFFA transition-all" data-lang="nav-about">Hakkımda</a>
+<a href="#experience" class="nav-link text-E0E7FF hover:text-A3BFFA transition-all" data-lang="nav-experience">Deneyimler</a>
+<a href="#projects" class="nav-link text-E0E7FF hover:text-A3BFFA transition-all" data-lang="nav-projects">Projeler</a>
+<a href="#skills" class="nav-link text-E0E7FF hover:text-A3BFFA transition-all" data-lang="nav-skills">Yetenekler</a>
+<a href="#contact" class="nav-link text-E0E7FF hover:text-A3BFFA transition-all" data-lang="nav-contact">İletişim</a>
+</div>
+<div class="language-selector">
+<button class="language-button">
+<i class="ri-earth-line ri-lg"></i>
+<span id="current-lang">TR</span>
+</button>
+<div class="language-menu">
+  <div class="language-item" data-lang-code="tr"><span class="language-flag">🇹🇷</span><span>Türkçe</span></div>
+  <div class="language-item" data-lang-code="en"><span class="language-flag">🇬🇧</span><span>English</span></div>
+  <div class="language-item" data-lang-code="de"><span class="language-flag">🇩🇪</span><span>Deutsch</span></div>
+  <div class="language-item" data-lang-code="fr"><span class="language-flag">🇫🇷</span><span>Français</span></div>
+  <div class="language-item" data-lang-code="es"><span class="language-flag">🇪🇸</span><span>Español</span></div>
+  <div class="language-item" data-lang-code="it"><span class="language-flag">🇮🇹</span><span>Italiano</span></div>
+  <div class="language-item" data-lang-code="zh"><span class="language-flag">🇨🇳</span><span>中文</span></div>
+  <div class="language-item" data-lang-code="ar"><span class="language-flag">🇸🇦</span><span>العربية</span></div>
+  <div class="language-item" data-lang-code="ja"><span class="language-flag">🇯🇵</span><span>日本語</span></div>
+  <div class="language-item" data-lang-code="ko"><span class="language-flag">🇰🇷</span><span>한국어</span></div>
+  <div class="language-item" data-lang-code="ru"><span class="language-flag">🇷🇺</span><span>Русский</span></div>
+  <div class="language-item" data-lang-code="no"><span class="language-flag">🇳🇴</span><span>Norsk</span></div>
+  <div class="language-item" data-lang-code="nl"><span class="language-flag">🇳🇱</span><span>Nederlands</span></div>
+  <div class="language-item" data-lang-code="sv"><span class="language-flag">🇸🇪</span><span>Svenska</span></div>
+  <div class="language-item" data-lang-code="fi"><span class="language-flag">🇫🇮</span><span>Suomi</span></div>
+</div>
+</div>
+<!-- Tema butonunu kaldırdım -->
+<button class="md:hidden text-E0E7FF w-10 h-10 flex items-center justify-center" id="mobileMenuButton">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+</div>
+<div id="mobileMenu" class="hidden md:hidden bg-1E3A8A w-full">
+<div class="container mx-auto px-4 py-4 flex flex-col space-y-4">
+<a href="#home" class="text-E0E7FF hover:text-A3BFFA py-2 transition-all" data-lang="nav-home">Anasayfa</a>
+<a href="#about" class="text-E0E7FF hover:text-A3BFFA py-2 transition-all" data-lang="nav-about">Hakkımda</a>
+<a href="#experience" class="text-E0E7FF hover:text-A3BFFA py-2 transition-all" data-lang="nav-experience">Deneyimler</a>
+<a href="#projects" class="text-E0E7FF hover:text-A3BFFA py-2 transition-all" data-lang="nav-projects">Projeler</a>
+<a href="#skills" class="text-E0E7FF hover:text-A3BFFA py-2 transition-all" data-lang="nav-skills">Yetenekler</a>
+<a href="#contact" class="text-E0E7FF hover:text-A3BFFA py-2 transition-all" data-lang="nav-contact">İletişim</a>
+</div>
+</div>
+</nav>
+<section id="home" class="min-h-screen flex items-center relative glass-card overflow-hidden">
+  <div id="vanta-hero" class="absolute inset-0 z-0 pointer-events-none"></div>
+<div id="particles-container" class="absolute inset-0 pointer-events-none"></div>
+  <div class="container mx-auto px-4 py-20 mt-16 relative z-10">
+<div class="flex flex-col md:flex-row items-center">
+<div class="w-full md:w-1/2 mb-10 md:mb-0">
+<h1 class="text-4xl md:text-6xl font-bold mb-6" data-lang="hero-title">
+    <span class="block md:inline">Dijital Güçle</span><br class="md:hidden"><span class="block md:inline">Stratejik Dönüşüm</span>
+</h1>
+<p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-2xl" data-lang="hero-description">
+    13+ yıllık deneyimle, işletmeleri dijital çağda yeniden konumlandıran bir yol arkadaşı.
+</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<a href="#projects" class="bg-A3BFFA text-0A1F44 px-6 py-3 rounded-button font-medium hover:bg-opacity-90 transition-all whitespace-nowrap text-center" data-lang="hero-projects-button">
+Projelerimi İncele
+</a>
+<a href="#contact" class="border-2 border-A3BFFA text-E0E7FF px-6 py-3 rounded-button font-medium hover:bg-A3BFFA hover:bg-opacity-10 transition-all whitespace-nowrap text-center" data-lang="hero-contact-button">
+Benimle İletişime Geç
+</a>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex justify-center flex-col items-center">
+<div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-A3BFFA to-4C6EF5 p-1">
+<div class="absolute inset-1 rounded-full overflow-hidden">
+<img src="https://static.readdy.ai/image/d42b6e562a4dea22143a743c5c7961eb/c130ac8e47b0496c3330f13b72ef69ed.png" alt="MÜCAHİT ÖZCAN" class="w-full h-full object-cover object-center scale-[1.15]">
+</div>
+</div>
+<div class="hero-name text-4xl md:text-6xl font-bold">
+Mücahit <span class="text-A3BFFA">ÖZCAN</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="about" class="py-20 relative glass-card overflow-hidden">
+  <div class="about-bg absolute inset-0 z-0 pointer-events-none"></div>
+  <div class="container mx-auto px-4 relative z-10">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-white scroll-reveal" data-lang="about-title">Hakkımda</h2>
+    <span class="section-title-underline"></span>
+<div class="flex flex-col md:flex-row items-center gap-10">
+<div class="w-full md:w-1/2 scroll-reveal">
+        <p class="text-lg mb-6 text-gray-300" data-lang="about-description-1">Dijital stratejist, proje yöneticisi ve yaratıcı çözüm ortağı olarak, 13 yılı aşkın deneyimimle işletmelerin dijital dönüşüm süreçlerine liderlik ediyorum.</p>
+        <p class="text-lg mb-6 text-gray-300" data-lang="about-description-2">Dijital dönüşüm, CRM, pazarlama ve tasarım alanlarında çok sayıda projeye imza attım. Teknoloji ile insan odaklı yaklaşımları birleştirerek, markaların dijital varlıklarını güçlendiriyorum.</p>
+        <p class="text-lg text-gray-300" data-lang="about-description-3">Stratejik düşünce yapısı ve analitik yaklaşımımla, karmaşık projeleri başarıyla yönetiyor, ekipleri hedeflere ulaştırıyorum. Her projede müşteri memnuniyetini ve ölçülebilir sonuçları ön planda tutuyorum.</p>
+</div>
+<div class="w-full md:w-1/2 grid grid-cols-2 gap-6 scroll-reveal">
+<div class="stat-card p-6 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+<i class="ri-line-chart-line ri-xl text-A3BFFA"></i>
+</div>
+          <h3 class="text-xl font-bold mb-2 text-gray-100" data-lang="about-skill-1-title">Stratejik Düşünce</h3>
+          <p class="text-gray-300" data-lang="about-skill-1-description">Veri odaklı karar alma ve uzun vadeli stratejik planlama</p>
+</div>
+<div class="stat-card p-6 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary bg-opacity-10 rounded-full mb-4">
+<i class="ri-team-line ri-xl text-4C6EF5"></i>
+</div>
+          <h3 class="text-xl font-bold mb-2 text-gray-100" data-lang="about-skill-2-title">Ekip Liderliği</h3>
+          <p class="text-gray-300" data-lang="about-skill-2-description">Çevik yönetim metodolojileri ve ekip motivasyonu</p>
+</div>
+<div class="stat-card p-6 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary bg-opacity-10 rounded-full mb-4">
+<i class="ri-code-box-line ri-xl text-4C6EF5"></i>
+</div>
+          <h3 class="text-xl font-bold mb-2 text-gray-100" data-lang="about-skill-3-title">Teknik Bilgi</h3>
+          <p class="text-gray-300" data-lang="about-skill-3-description">Dijital platformlar ve yazılım çözümleri uzmanlığı</p>
+</div>
+<div class="stat-card p-6 rounded-lg">
+<div class="w-12 h-12 flex items-center justify-center bg-primary bg-opacity-10 rounded-full mb-4">
+<i class="ri-customer-service-2-line ri-xl text-A3BFFA"></i>
+</div>
+          <h3 class="text-xl font-bold mb-2 text-gray-100" data-lang="about-skill-4-title">Müşteri Odaklılık</h3>
+          <p class="text-gray-300" data-lang="about-skill-4-description">Kullanıcı deneyimi ve müşteri memnuniyeti önceliği</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="experience" class="py-20 relative glass-card overflow-hidden">
+  <div id="vanta-experience" class="absolute inset-0 z-0"></div>
+  <div class="container mx-auto px-4 relative z-10">
+<h2 class="text-3xl md:text-4xl font-bold mb-12 text-center scroll-reveal" data-lang="experience-title">Deneyimler</h2>
+<div class="max-w-3xl mx-auto relative">
+<div class="absolute left-0 top-0 bottom-0 w-0.5 bg-gradient-to-b from-A3BFFA to-4C6EF5"></div>
+<div class="timeline-item relative pl-10 pb-12 scroll-reveal">
+<div class="timeline-dot"></div>
+<div class="bg-gray-900 p-6 rounded-lg">
+<div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+<h3 class="text-xl font-bold text-white" data-lang="experience-1-title">Freelance Dijital Pazarlama Yöneticisi</h3>
+<span class="text-A3BFFA font-medium" data-lang="experience-1-date">2020 – günümüz</span>
+</div>
+<ul class="list-disc list-inside text-gray-300 space-y-2">
+<li data-lang="experience-1-point-1">Çeşitli sektörlerdeki KOBİ'ler için dijital pazarlama stratejileri geliştirme</li>
+<li data-lang="experience-1-point-2">E-ticaret platformlarında satışta %30 artış sağlama</li>
+<li data-lang="experience-1-point-3">SEO optimizasyonu ile organik erişimde %50 büyüme elde etme</li>
+<li data-lang="experience-1-point-4">Sosyal medya yönetimi ve içerik stratejisi ile marka bilinirliğini artırma</li>
+</ul>
+</div>
+</div>
+<div class="timeline-item relative pl-10 pb-12 scroll-reveal">
+<div class="timeline-dot"></div>
+<div class="bg-gray-900 p-6 rounded-lg">
+<div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+<h3 class="text-xl font-bold text-white" data-lang="experience-2-title">GSK – Kıdemli Müşteri Yönetimi Uzmanı</h3>
+<span class="text-A3BFFA font-medium" data-lang="experience-2-date">2015 – 2018</span>
+</div>
+<ul class="list-disc list-inside text-gray-300 space-y-2">
+<li data-lang="experience-2-point-1">CRM süreçlerinin optimizasyonu ile müşteri şikayetlerinde %20 azalma</li>
+<li data-lang="experience-2-point-2">Yıllık hedeflerde %95 başarı oranı yakalama</li>
+<li data-lang="experience-2-point-3">Müşteri veri analitiği ile pazarlama stratejilerini yönlendirme</li>
+<li data-lang="experience-2-point-4">180 Eczane yönetimi ve performans değerlendirmesi</li>
+</ul>
+</div>
+</div>
+<div class="timeline-item relative pl-10 pb-12 scroll-reveal">
+<div class="timeline-dot"></div>
+<div class="bg-gray-900 p-6 rounded-lg">
+<div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+<h3 class="text-xl font-bold text-white" data-lang="experience-3-title">Turkcell – Teknoloji Uzmanı</h3>
+<span class="text-A3BFFA font-medium" data-lang="experience-3-date">2009 – 2011</span>
+</div>
+<ul class="list-disc list-inside text-gray-300 space-y-2">
+<li data-lang="experience-3-point-1">Akıllı cihaz satışlarında %15 artış sağlama</li>
+<li data-lang="experience-3-point-2">Ekip eğitimleriyle mağaza performansında iyileşme</li>
+<li data-lang="experience-3-point-3">Müşteri deneyimini iyileştiren süreç optimizasyonları</li>
+<li data-lang="experience-3-point-4">Yeni ürün lansmanlarında teknik eğitimlerin koordinasyonu</li>
+</ul>
+</div>
+</div>
+<div class="timeline-item relative pl-10 pb-12 scroll-reveal">
+<div class="timeline-dot"></div>
+<div class="bg-gray-900 p-6 rounded-lg">
+<div class="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
+<h3 class="text-xl font-bold text-white" data-lang="experience-4-title">Teknosa – Mağaza Yöneticisi</h3>
+<span class="text-A3BFFA font-medium" data-lang="experience-4-date">2005 – 2008</span>
+</div>
+<ul class="list-disc list-inside text-gray-300 space-y-2">
+<li data-lang="experience-4-point-1">Ensuring operational efficiency and inventory optimization</li>
+<li data-lang="experience-4-point-2">Increasing visitor conversion rates</li>
+<li data-lang="experience-4-point-3">Satış hedeflerinde sürekli başarı ve bölge birincilikleri</li>
+<li data-lang="experience-4-point-4">Müşteri memnuniyeti odaklı mağaza kültürü oluşturma</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="projects" class="py-20 relative glass-card overflow-hidden">
+  <div id="vanta-projects" class="absolute inset-0 z-0"></div>
+  <div class="container mx-auto px-4 relative z-10">
+<h2 class="text-3xl md:text-4xl font-bold mb-12 text-center scroll-reveal" data-lang="projects-title">Projeler</h2>
+<span class="section-title-underline"></span>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="project-card bg-gray-900 rounded-lg overflow-hidden scroll-reveal relative">
+<div class="h-48 overflow-hidden">
+<img src="https://static.readdy.ai/image/d42b6e562a4dea22143a743c5c7961eb/ed8229aed9b191ea9262fd051f4ac14a.png" alt="Beautiq Projesi" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6 border-t-2 border-A3BFFA">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-xl font-bold" data-lang="project-1-title">Beautiq – Güzellik Salonu Yönetimi</h3>
+<span class="text-sm text-A3BFFA" data-lang="project-1-date">2024–2025</span>
+</div>
+<p class="text-gray-300 mb-4" data-lang="project-1-description">
+Güzellik salonları için kapsamlı bir mobil uygulama ve yönetim sistemi. Randevu, müşteri ve envanter yönetimi fonksiyonları.
+</p>
+<div class="bg-gray-800 p-3 rounded">
+<p class="text-A3BFFA font-medium" data-lang="project-1-result">Sonuç: Randevu ve müşteri yönetiminde %40 memnuniyet artışı</p>
+</div>
+<a href="https://beautiq.lovable.app" target="_blank" class="view-link" data-lang="project-1-link">Uygulamayı İncele</a>
+  </div>
+</div>
+<!-- Modal örneği -->
+<div id="modal-beautiq" class="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-60 hidden">
+  <div class="bg-white text-gray-900 rounded-lg p-8 max-w-lg w-full relative">
+    <button onclick="closeModal('modal-beautiq')" class="absolute top-2 right-2 text-2xl">&times;</button>
+    <h3 class="text-2xl font-bold mb-4">Beautiq – Güzellik Salonu Yönetimi</h3>
+    <p class="mb-2">Beautiq, güzellik salonları için geliştirilmiş kapsamlı bir yönetim sistemidir. Randevu, müşteri, envanter ve gelir-gider takibi gibi birçok fonksiyonu tek platformda sunar. Mobil uygulama ve web paneli ile entegre çalışır.</p>
+    <ul class="list-disc list-inside mb-2">
+      <li>Kolay randevu yönetimi</li>
+      <li>Müşteri geçmişi ve sadakat takibi</li>
+      <li>Stok ve envanter kontrolü</li>
+      <li>Detaylı raporlama ve analiz</li>
+    </ul>
+    <a href="https://beautiq.lovable.app" target="_blank" class="view-link mt-4">Uygulamayı Ziyaret Et</a>
+</div>
+</div>
+<div class="project-card bg-gray-900 rounded-lg overflow-hidden scroll-reveal">
+<div class="h-48 overflow-hidden">
+<img src="https://static.readdy.ai/image/d42b6e562a4dea22143a743c5c7961eb/a1cfe298e90b36ba02bd7acb587a879b.png" alt="Antalya Turkuaz Web Sitesi" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6 border-t-2 border-4C6EF5">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-xl font-bold" data-lang="project-2-title">Antalya Turkuaz Web Sitesi</h3>
+<span class="text-sm text-4C6EF5" data-lang="project-2-date">2025</span>
+</div>
+<p class="text-gray-300 mb-4" data-lang="project-2-description">
+Antalya Turkuaz için SEO uyumlu, responsive tasarıma sahip kurumsal web sitesi. Güvenlik kamera sistemleri, bilişim çözümleri ve bölge dağıtıcılığı yaptığı markaların tanıtımı için optimize edildi.
+</p>
+<div class="bg-gray-800 p-3 rounded">
+<p class="text-4C6EF5 font-medium" data-lang="project-2-result">Sonuç: Organik trafik artışı: %60, müşteri taleplerinde %30 artış</p>
+</div>
+<a href="http://www.antalyaturkuaz.com" target="_blank" class="view-link" data-lang="project-2-link">Web Sitesini İncele</a>
+</div>
+</div>
+<div class="project-card bg-gray-900 rounded-lg overflow-hidden scroll-reveal">
+<div class="h-48 overflow-hidden">
+<img src="https://static.readdy.ai/image/d42b6e562a4dea22143a743c5c7961eb/818b893418721a209b603fda690c2185.png" alt="Hanedan Konakları Dijital Katalog" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6 border-t-2 border-A3BFFA">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-xl font-bold" data-lang="project-3-title">Hanedan Konakları Dijital Katalog</h3>
+<span class="text-sm text-A3BFFA" data-lang="project-3-date">2024</span>
+</div>
+<p class="text-gray-300 mb-4" data-lang="project-3-description">
+Lüks konut projesi için interaktif dijital katalog tasarımı. 3D görselleştirmeler, sanal turlar ve dinamik fiyatlandırma özellikleri.
+</p>
+<div class="bg-gray-800 p-3 rounded">
+<p class="text-A3BFFA font-medium" data-lang="project-3-result">Sonuç: Satış temsilcilerinin işini kolaylaştıran yaratıcı ve prestijli katalog</p>
+</div>
+<a href="https://mcozcn.github.io/mucahitozcan/documents/hanedan-konaklari-katalog.pdf" target="_blank" class="view-link" data-lang="project-3-link">Kataloğu İncele</a>
+</div>
+</div>
+<div class="project-card bg-gray-900 rounded-lg overflow-hidden scroll-reveal">
+<div class="h-48 overflow-hidden">
+<img src="https://static.readdy.ai/image/d42b6e562a4dea22143a743c5c7961eb/65e91170d3f9335cdaa69d67038a9d33.png" alt="Değirmen Fabrika Üretim Kılavuzu ve Eğitim Sistemi" class="w-full h-full object-cover object-top">
+</div>
+<div class="p-6 border-t-2 border-4C6EF5">
+<div class="flex justify-between items-start mb-4">
+<h3 class="text-xl font-bold" data-lang="project-4-title">Değirmen Fabrika Üretim Kılavuzu ve Eğitim Sistemi</h3>
+<span class="text-sm text-4C6EF5" data-lang="project-4-date">2024</span>
+</div>
+<p class="text-gray-300 mb-4" data-lang="project-4-description">
+Bir fabrikanın üretim sisteminin işleyişini detaylıca anlatan kapsamlı bir dijital kılavuz. Aynı zamanda firma için dijital içerik, eğitim modülleri ve sınavlar geliştirildi.
+</p>
+<div class="bg-gray-800 p-3 rounded">
+<p class="text-4C6EF5 font-medium" data-lang="project-4-result">Sonuç: Çalışanların üretim süreçlerini öğrenme süresinde %35 azalma ve eğitim sonrası sınav başarı oranında %90 artış</p>
+</div>
+<a href="https://mcozcn.github.io/mucahitozcan/documents/degirmen-kilavuz-sistemi.pdf" target="_blank" class="view-link" data-lang="project-4-link">Kılavuzu İncele</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="skills" class="py-20 relative glass-card overflow-hidden">
+  <div class="skills-bg absolute inset-0 z-0 pointer-events-none"></div>
+  <div class="container mx-auto px-4 relative z-10 text-gray-100">
+    <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center text-white scroll-reveal" data-lang="skills-title">Yetenekler</h2>
+    <span class="section-title-underline"></span>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto mb-12">
+      <div class="skill-card p-6 rounded-lg text-center scroll-reveal group">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+          <i class="ri-line-chart-line ri-3x text-primary"></i>
+</div>
+<h3 class="text-lg font-bold mb-2" data-lang="skill-1-title">Stratejik Pazarlama</h3>
+<p class="text-sm text-gray-400" data-lang="skill-1-description">Dijital strateji, marka konumlandırma</p>
+</div>
+      <div class="skill-card p-6 rounded-lg text-center scroll-reveal group">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+          <i class="ri-database-2-line ri-3x text-secondary"></i>
+</div>
+<h3 class="text-lg font-bold mb-2" data-lang="skill-2-title">Dijital Analitik ve CRM</h3>
+<p class="text-sm text-gray-400" data-lang="skill-2-description">Veri analizi, müşteri ilişkileri</p>
+</div>
+      <div class="skill-card p-6 rounded-lg text-center scroll-reveal group">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+          <i class="ri-task-line ri-3x text-primary"></i>
+</div>
+<h3 class="text-lg font-bold mb-2" data-lang="skill-3-title">Proje Yönetimi</h3>
+<p class="text-sm text-gray-400" data-lang="skill-3-description">Süreç Yönetimi, proje planlama</p>
+</div>
+      <div class="skill-card p-6 rounded-lg text-center scroll-reveal group">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+          <i class="ri-palette-line ri-3x text-secondary"></i>
+</div>
+<h3 class="text-lg font-bold mb-2" data-lang="skill-4-title">Grafik ve Web Tasarımı</h3>
+<p class="text-sm text-gray-400" data-lang="skill-4-description">UI/UX, görsel iletişim</p>
+</div>
+      <div class="skill-card p-6 rounded-lg text-center scroll-reveal group">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+          <i class="ri-search-line ri-3x text-primary"></i>
+</div>
+<h3 class="text-lg font-bold mb-2" data-lang="skill-5-title">SEO ve Performans Reklamcılığı</h3>
+<p class="text-sm text-gray-400" data-lang="skill-5-description">Google Ads, içerik stratejisi</p>
+</div>
+      <div class="skill-card p-6 rounded-lg text-center scroll-reveal group">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+          <i class="ri-team-line ri-3x text-secondary"></i>
+</div>
+<h3 class="text-lg font-bold mb-2" data-lang="skill-6-title">Ekip Yönetimi ve Eğitim</h3>
+<p class="text-sm text-gray-400" data-lang="skill-6-description">Liderlik, mentorluk</p>
+</div>
+      <div class="skill-card p-6 rounded-lg text-center scroll-reveal group">
+        <div class="w-16 h-16 flex items-center justify-center mx-auto mb-4 transition-transform duration-300 group-hover:scale-110">
+          <i class="ri-store-line ri-3x text-primary"></i>
+</div>
+<h3 class="text-lg font-bold mb-2" data-lang="skill-7-title">Satış ve Operasyon Yönetimi</h3>
+<p class="text-sm text-gray-400" data-lang="skill-7-description">Süreç optimizasyonu, verimlilik</p>
+      </div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-20 relative glass-card overflow-hidden">
+  <div class="contact-bg absolute inset-0 z-0 pointer-events-none"></div>
+  <div class="container mx-auto px-4 relative z-10 text-gray-100">
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center text-white scroll-reveal" data-lang="contact-title">Proje Fikriniz mi Var?</h2>
+    <p class="text-xl text-gray-300 mb-8 text-center" data-lang="contact-description">Dijital dönüşüm yolculuğunuz için bana ulaşın!</p>
+    <div class="max-w-xl mx-auto bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-lg shadow-lg flex flex-col items-center">
+      <a href="mailto:mcozcn@gmail.com" class="text-gray-300 hover:text-A3BFFA transition-all mb-6 text-lg font-semibold text-center">mcozcn@gmail.com</a>
+      <a href="mailto:mcozcn@gmail.com" class="contact-button inline-flex items-center gap-3 bg-gradient-to-r from-A3BFFA to-4C6EF5 text-0A1F44 px-8 py-4 rounded-lg font-medium shadow-lg hover:shadow-xl transition-all mb-4">
+<i class="ri-mail-send-line ri-lg"></i>
+<span data-lang="contact-button">Bana Ulaşın!</span>
+</a>
+      <div class="contact-info mt-2">
+        <a href="https://www.linkedin.com/in/mcozcn/" target="_blank" class="text-gray-400 hover:text-A3BFFA transition-all flex justify-center">
+<div class="w-10 h-10 flex items-center justify-center">
+<i class="ri-linkedin-fill ri-lg"></i>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<footer class="py-10" style="background-color: #1E3A8A;">
+<div class="container mx-auto px-4">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="brand-name">
+<img src="images/logo.png" alt="MÜCAHİT ÖZCAN Logo" class="logo-img">
+<span class="name-part">MÜCAHİT</span><span class="highlight-part">ÖZCAN</span>
+</div>
+<div class="text-gray-500 text-sm" data-lang="footer-copyright">
+© 2025 Mücahit Özcan. Tüm hakları saklıdır.
+</div>
+</div>
+</div>
+</footer>
+<script id="navbarScript">
+document.addEventListener('DOMContentLoaded', function() {
+const mobileMenuButton = document.getElementById('mobileMenuButton');
+const mobileMenu = document.getElementById('mobileMenu');
+const navbar = document.querySelector('nav');
+mobileMenuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+if (!mobileMenu.classList.contains('hidden')) {
+mobileMenuButton.innerHTML = '<i class="ri-close-line ri-lg"></i>';
+} else {
+mobileMenuButton.innerHTML = '<i class="ri-menu-line ri-lg"></i>';
+}
+});
+window.addEventListener('scroll', function() {
+if (window.scrollY > 10) {
+navbar.classList.add('bg-0A1F44', 'bg-opacity-80');
+navbar.classList.remove('bg-opacity-20');
+} else {
+navbar.classList.remove('bg-0A1F44', 'bg-opacity-80');
+navbar.classList.add('bg-opacity-20');
+}
+});
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-link');
+window.addEventListener('scroll', function() {
+let current = '';
+sections.forEach(section => {
+const sectionTop = section.offsetTop;
+const sectionHeight = section.clientHeight;
+if (window.scrollY >= (sectionTop - 200)) {
+current = section.getAttribute('id');
+}
+});
+navLinks.forEach(link => {
+link.classList.remove('active');
+if (link.getAttribute('href') === `#${current}`) {
+link.classList.add('active');
+}
+});
+});
+});
+</script>
+<script id="scrollRevealScript">
+document.addEventListener('DOMContentLoaded', function() {
+  const scrollRevealElements = document.querySelectorAll('.scroll-reveal, .stat-card, .skill-card, .project-card, .timeline-item, .glass-card, .bg-gray-900, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-up, .scroll-reveal-down');
+const revealOnScroll = function() {
+scrollRevealElements.forEach(element => {
+const elementTop = element.getBoundingClientRect().top;
+const windowHeight = window.innerHeight;
+if (elementTop < windowHeight - 100) {
+element.classList.add('active');
+}
+});
+};
+revealOnScroll();
+window.addEventListener('scroll', revealOnScroll);
+});
+</script>
+<script id="particlesScript">
+document.addEventListener('DOMContentLoaded', function() {
+const particlesContainer = document.getElementById('particles-container');
+const particleCount = window.innerWidth < 768 ? 20 : 80;
+const particles = [];
+for (let i = 0; i < particleCount; i++) {
+const particle = document.createElement('div');
+particle.classList.add('particle');
+const size = Math.random() * 3 + 1;
+particle.style.width = `${size}px`;
+particle.style.height = `${size}px`;
+particle.style.left = `${Math.random() * 100}%`;
+particle.style.top = `${Math.random() * 100}%`;
+particle.style.opacity = Math.random() * 0.4 + 0.2;
+particlesContainer.appendChild(particle);
+particles.push({
+element: particle,
+vx: (Math.random() - 0.5) * 0.5,
+vy: (Math.random() - 0.5) * 0.5,
+x: parseFloat(particle.style.left),
+y: parseFloat(particle.style.top),
+});
+const duration = Math.random() * 20 + 10;
+const delay = Math.random() * 5;
+particle.style.animation = `float ${duration}s ${delay}s infinite alternate`;
+}
+document.addEventListener('mousemove', (e) => {
+const mouseX = (e.clientX / window.innerWidth) * 100;
+const mouseY = (e.clientY / window.innerHeight) * 100;
+particles.forEach(particle => {
+const rect = particle.element.getBoundingClientRect();
+const particleX = parseFloat(particle.element.style.left);
+const particleY = parseFloat(particle.style.top);
+const dx = mouseX - particleX;
+const dy = mouseY - particleY;
+const distance = Math.sqrt(dx * dx + dy * dy);
+if (distance < 15) {
+const angle = Math.atan2(dy, dx);
+const force = (15 - distance) / 15;
+particle.vx += Math.cos(angle) * force * 0.5;
+particle.vy += Math.sin(angle) * force * 0.5;
+}
+particle.x += particle.vx;
+particle.y += particle.vy;
+particle.vx *= 0.95;
+particle.vy *= 0.95;
+particle.x = Math.max(0, Math.min(100, particle.x));
+particle.y = Math.max(0, Math.min(100, particle.y));
+particle.element.style.left = `${particle.x}%`;
+particle.element.style.top = `${particle.y}%`;
+});
+});
+});
+</script>
+<script id="waveAnimation">
+document.addEventListener('DOMContentLoaded', function() {
+const paths = document.querySelectorAll('.line path');
+function animatePaths() {
+paths.forEach((path, index) => {
+const length = path.getTotalLength();
+path.style.strokeDasharray = length;
+path.style.strokeDashoffset = length;
+const animation = path.animate([
+{ strokeDashoffset: length },
+{ strokeDashoffset: -length }
+], {
+duration: 15000 + (index * 2000),
+iterations: Infinity,
+easing: 'ease-in-out'
+});
+});
+}
+if (paths.length > 0) {
+animatePaths();
+}
+});
+</script>
+<script id="languageScript">
+document.addEventListener('DOMContentLoaded', function() {
+    // İngilizce anahtarlarını referans al
+    const en = {
+            title: "MÜCAHİT ÖZCAN – Digital Transformation Expert and Strategic Project Leader",
+            "nav-home": "Home",
+            "nav-about": "About Me",
+            "nav-experience": "Experience",
+            "nav-projects": "Projects",
+            "nav-skills": "Skills",
+            "nav-contact": "Contact",
+        "hero-title": "<span class='block md:inline'>Strategic Transformation</span><br class='md:hidden'><span class='block md:inline'>with Digital Power</span>",
+            "hero-description": "With over 13 years of experience, I guide businesses to reposition themselves in the digital age.",
+            "hero-projects-button": "Explore My Projects",
+            "hero-contact-button": "Get in Touch with Me",
+            "about-title": "About Me",
+            "about-description-1": "As a digital strategist, project manager, and creative solution partner, I lead digital transformation processes for businesses with over 13 years of experience.",
+        "about-description-2": "I have delivered numerous projects in digital transformation, CRM, marketing, and design. By combining technology with human-centric approaches, I empower brands' digital presence.",
+            "about-description-3": "With a strategic mindset and analytical approach, I successfully manage complex projects and lead teams to achieve their goals. I prioritize customer satisfaction and measurable results in every project.",
+            "about-skill-1-title": "Strategic Thinking",
+            "about-skill-1-description": "Data-driven decision-making and long-term strategic planning",
+            "about-skill-2-title": "Team Leadership",
+            "about-skill-2-description": "Agile management methodologies and team motivation",
+            "about-skill-3-title": "Technical Expertise",
+            "about-skill-3-description": "Expertise in digital platforms and software solutions",
+            "about-skill-4-title": "Customer Focus",
+            "about-skill-4-description": "User experience and customer satisfaction priority",
+            "experience-title": "Experience",
+            "experience-1-title": "Freelance Digital Marketing Manager",
+            "experience-1-date": "2020 – Present",
+            "experience-1-point-1": "Developing digital marketing strategies for SMEs across various industries",
+            "experience-1-point-2": "Achieving a 30% sales increase on e-commerce platforms",
+            "experience-1-point-3": "Driving 50% growth in organic reach through SEO optimization",
+            "experience-1-point-4": "Enhancing brand awareness through social media management and content strategy",
+            "experience-2-title": "GSK – Senior Customer Management Specialist",
+            "experience-2-date": "2015 – 2018",
+            "experience-2-point-1": "20% reduction in customer complaints through CRM process optimization",
+            "experience-2-point-2": "Achieving a 95% success rate in annual targets",
+            "experience-2-point-3": "Guiding marketing strategies with customer data analytics",
+            "experience-2-point-4": "Managing 180 pharmacies and evaluating performance",
+            "experience-3-title": "Turkcell – Technology Specialist",
+            "experience-3-date": "2009 – 2011",
+            "experience-3-point-1": "Increasing smart device sales by 15%",
+            "experience-3-point-2": "Improving store performance through team training",
+            "experience-3-point-3": "Optimizing processes to enhance customer experience",
+            "experience-3-point-4": "Coordinating technical training for new product launches",
+            "experience-4-title": "Teknosa – Store Manager",
+            "experience-4-date": "2005 – 2008",
+            "experience-4-point-1": "Ensuring operational efficiency and inventory optimization",
+            "experience-4-point-2": "Increasing visitor conversion rates",
+            "experience-4-point-3": "Consistent success in sales targets and regional leadership",
+        "experience-4-point-4": "Creating a customer satisfaction-oriented store culture",
+            "projects-title": "Projects",
+            "project-1-title": "Beautiq – Beauty Salon Management",
+            "project-1-date": "2024–2025",
+            "project-1-description": "A comprehensive mobile app and management system for beauty salons, featuring appointment, customer, and inventory management functions.",
+            "project-1-result": "Result: 40% increase in satisfaction for appointment and customer management",
+            "project-1-link": "Explore the App",
+            "project-2-title": "Antalya Turkuaz Website",
+            "project-2-date": "2025",
+            "project-2-description": "A corporate website for Antalya Turkuaz, SEO-optimized and responsive, designed to promote security camera systems, IT solutions, and regional distribution brands.",
+            "project-2-result": "Result: 60% increase in organic traffic, 30% rise in customer inquiries",
+            "project-2-link": "Explore the Website",
+            "project-3-title": "Hanedan Konakları Digital Catalog",
+            "project-3-date": "2024",
+            "project-3-description": "Interactive digital catalog design for a luxury housing project, featuring 3D visualizations, virtual tours, and dynamic pricing options.",
+            "project-3-result": "Result: A creative and prestigious catalog that simplifies the work of sales representatives",
+            "project-3-link": "Explore the Catalog",
+            "project-4-title": "Değirmen Factory Production Guide and Training System",
+            "project-4-date": "2024",
+        "project-4-description": "A comprehensive digital guide detailing the operations of a factory's production system. Additionally, digital content, training modules, and exams were developed for the company.",
+            "project-4-result": "Result: 35% reduction in employee learning time for production processes, 90% increase in post-training exam success rate",
+            "project-4-link": "Explore the Guide",
+            "skills-title": "Skills",
+            "skill-1-title": "Strategic Marketing",
+            "skill-1-description": "Digital strategy, brand positioning",
+            "skill-2-title": "Digital Analytics and CRM",
+            "skill-2-description": "Data analysis, customer relations",
+            "skill-3-title": "Project Management",
+            "skill-3-description": "Process management, project planning",
+            "skill-4-title": "Graphic and Web Design",
+        "skill-4-description": "UI/UX, Visual Communication",
+            "skill-5-title": "SEO and Performance Advertising",
+        "skill-5-description": "Google Ads, Content Strategy",
+            "skill-6-title": "Team Management and Training",
+            "skill-6-description": "Leadership, mentoring",
+            "skill-7-title": "Sales and Operations Management",
+            "skill-7-description": "Process optimization, efficiency",
+            "contact-title": "Have a Project Idea?",
+            "contact-description": "Reach out to me for your digital transformation journey!",
+            "contact-button": "Contact Me!",
+        "footer-copyright": "© 2025 Mücahit Özcan. All rights reserved."
+    };
+    // Diğer dillerin objelerini eksiksiz ve profesyonel çevirilerle doldur
+    function fillLang(base, custom) {
+      const out = {};
+      for (const key in base) {
+        out[key] = (custom && custom[key]) ? custom[key] : base[key];
+      }
+      return out;
+    }
+    const languages = {
+      en,
+      tr: fillLang(en, {
+            title: "MÜCAHİT ÖZCAN – Dijital Dönüşüm Uzmanı ve Stratejik Proje Lideri",
+            "nav-home": "Anasayfa",
+            "nav-about": "Hakkımda",
+            "nav-experience": "Deneyimler",
+            "nav-projects": "Projeler",
+            "nav-skills": "Yetenekler",
+            "nav-contact": "İletişim",
+        "hero-title": "<span class='block md:inline'>Dijital Güçle</span><br class='md:hidden'><span class='block md:inline'>Stratejik Dönüşüm</span>",
+            "hero-description": "13+ yıllık deneyimle, işletmeleri dijital çağda yeniden konumlandıran bir yol arkadaşı.",
+            "hero-projects-button": "Projelerimi İncele",
+            "hero-contact-button": "Benimle İletişime Geç",
+            "about-title": "Hakkımda",
+            "about-description-1": "Dijital stratejist, proje yöneticisi ve yaratıcı çözüm ortağı olarak, 13 yılı aşkın deneyimimle işletmelerin dijital dönüşüm süreçlerine liderlik ediyorum.",
+            "about-description-2": "Dijital dönüşüm, CRM, pazarlama ve tasarım alanlarında çok sayıda projeye imza attım. Teknoloji ile insan odaklı yaklaşımları birleştirerek, markaların dijital varlıklarını güçlendiriyorum.",
+            "about-description-3": "Stratejik düşünce yapısı ve analitik yaklaşımımla, karmaşık projeleri başarıyla yönetiyor, ekipleri hedeflere ulaştırıyorum. Her projede müşteri memnuniyetini ve ölçülebilir sonuçları ön planda tutuyorum.",
+            "about-skill-1-title": "Stratejik Düşünce",
+            "about-skill-1-description": "Veri odaklı karar alma ve uzun vadeli stratejik planlama",
+            "about-skill-2-title": "Ekip Liderliği",
+            "about-skill-2-description": "Çevik yönetim metodolojileri ve ekip motivasyonu",
+            "about-skill-3-title": "Teknik Bilgi",
+            "about-skill-3-description": "Dijital platformlar ve yazılım çözümleri uzmanlığı",
+            "about-skill-4-title": "Müşteri Odaklılık",
+            "about-skill-4-description": "Kullanıcı deneyimi ve müşteri memnuniyeti önceliği",
+            "experience-title": "Deneyimler",
+            "experience-1-title": "Freelance Dijital Pazarlama Yöneticisi",
+            "experience-1-date": "2020 – günümüz",
+            "experience-1-point-1": "Çeşitli sektörlerdeki KOBİ'ler için dijital pazarlama stratejileri geliştirme",
+            "experience-1-point-2": "E-ticaret platformlarında satışta %30 artış sağlama",
+            "experience-1-point-3": "SEO optimizasyonu ile organik erişimde %50 büyüme elde etme",
+            "experience-1-point-4": "Sosyal medya yönetimi ve içerik stratejisi ile marka bilinirliğini artırma",
+            "experience-2-title": "GSK – Kıdemli Müşteri Yönetimi Uzmanı",
+            "experience-2-date": "2015 – 2018",
+            "experience-2-point-1": "CRM süreçlerinin optimizasyonu ile müşteri şikayetlerinde %20 azalma",
+            "experience-2-point-2": "Yıllık hedeflerde %95 başarı oranı yakalama",
+            "experience-2-point-3": "Müşteri veri analitiği ile pazarlama stratejilerini yönlendirme",
+            "experience-2-point-4": "180 Eczane yönetimi ve performans değerlendirmesi",
+            "experience-3-title": "Turkcell – Teknoloji Uzmanı",
+            "experience-3-date": "2009 – 2011",
+            "experience-3-point-1": "Akıllı cihaz satışlarında %15 artış sağlama",
+            "experience-3-point-2": "Ekip eğitimleriyle mağaza performansında iyileşme",
+            "experience-3-point-3": "Müşteri deneyimini iyileştiren süreç optimizasyonları",
+            "experience-3-point-4": "Yeni ürün lansmanlarında teknik eğitimlerin koordinasyonu",
+            "experience-4-title": "Teknosa – Mağaza Yöneticisi",
+            "experience-4-date": "2005 – 2008",
+            "experience-4-point-1": "Operasyonel verimlilik ve stok optimizasyonu sağlama",
+            "experience-4-point-2": "Ziyaretçi dönüşüm oranında artış elde etme",
+            "experience-4-point-3": "Satış hedeflerinde sürekli başarı ve bölge birincilikleri",
+            "experience-4-point-4": "Müşteri memnuniyeti odaklı mağaza kültürü oluşturma",
+            "projects-title": "Projeler",
+            "project-1-title": "Beautiq – Güzellik Salonu Yönetimi",
+            "project-1-date": "2024–2025",
+            "project-1-description": "Güzellik salonları için kapsamlı bir mobil uygulama ve yönetim sistemi. Randevu, müşteri ve envanter yönetimi fonksiyonları.",
+            "project-1-result": "Sonuç: Randevu ve müşteri yönetiminde %40 memnuniyet artışı",
+            "project-1-link": "Uygulamayı İncele",
+            "project-2-title": "Antalya Turkuaz Web Sitesi",
+            "project-2-date": "2025",
+            "project-2-description": "Antalya Turkuaz için SEO uyumlu, responsive tasarıma sahip kurumsal web sitesi. Güvenlik kamera sistemleri, bilişim çözümleri ve bölge dağıtıcılığı yaptığı markaların tanıtımı için optimize edildi.",
+            "project-2-result": "Sonuç: Organik trafik artışı: %60, müşteri taleplerinde %30 artış",
+            "project-2-link": "Web Sitesini İncele",
+            "project-3-title": "Hanedan Konakları Dijital Katalog",
+            "project-3-date": "2024",
+            "project-3-description": "Lüks konut projesi için interaktif dijital katalog tasarımı. 3D görselleştirmeler, sanal turlar ve dinamik fiyatlandırma özellikleri.",
+            "project-3-result": "Sonuç: Satış temsilcilerinin işini kolaylaştıran yaratıcı ve prestijli katalog",
+            "project-3-link": "Kataloğu İncele",
+            "project-4-title": "Değirmen Fabrika Üretim Kılavuzu ve Eğitim Sistemi",
+            "project-4-date": "2024",
+            "project-4-description": "Bir fabrikanın üretim sisteminin işleyişini detaylıca anlatan kapsamlı bir dijital kılavuz. Aynı zamanda firma için dijital içerik, eğitim modülleri ve sınavlar geliştirildi.",
+            "project-4-result": "Sonuç: Çalışanların üretim süreçlerini öğrenme süresinde %35 azalma ve eğitim sonrası sınav başarı oranında %90 artış",
+            "project-4-link": "Kılavuzu İncele",
+            "skills-title": "Yetenekler",
+            "skill-1-title": "Stratejik Pazarlama",
+            "skill-1-description": "Dijital strateji, marka konumlandırma",
+            "skill-2-title": "Dijital Analitik ve CRM",
+            "skill-2-description": "Veri analizi, müşteri ilişkileri",
+            "skill-3-title": "Proje Yönetimi",
+            "skill-3-description": "Süreç Yönetimi, proje planlama",
+            "skill-4-title": "Grafik ve Web Tasarımı",
+            "skill-4-description": "UI/UX, görsel iletişim",
+            "skill-5-title": "SEO ve Performans Reklamcılığı",
+            "skill-5-description": "Google Ads, içerik stratejisi",
+            "skill-6-title": "Ekip Yönetimi ve Eğitim",
+            "skill-6-description": "Liderlik, mentorluk",
+            "skill-7-title": "Satış ve Operasyon Yönetimi",
+            "skill-7-description": "Süreç optimizasyonu, verimlilik",
+            "contact-title": "Proje Fikriniz mi Var?",
+            "contact-description": "Dijital dönüşüm yolculuğunuz için bana ulaşın!",
+            "contact-button": "Bana Ulaşın!",
+        "footer-copyright": "© 2025 Mücahit Özcan. Tüm hakları saklıdır."
+    }),
+      de: fillLang(en, {
+        title: "MÜCAHİT ÖZCAN – Experte für digitale Transformation und strategischer Projektleiter",
+        "nav-home": "Startseite",
+        "nav-about": "Über mich",
+        "nav-experience": "Erfahrung",
+        "nav-projects": "Projekte",
+        "nav-skills": "Fähigkeiten",
+        "nav-contact": "Kontakt",
+        "hero-title": "<span class='block md:inline'>Strategische Transformation</span><br class='md:hidden'><span class='block md:inline'>mit digitaler Kraft</span>",
+        "hero-description": "Mit über 13 Jahren Erfahrung begleite ich Unternehmen auf ihrem Weg in die digitale Zukunft.",
+        "hero-projects-button": "Meine Projekte ansehen",
+        "hero-contact-button": "Kontakt aufnehmen",
+        "about-title": "Über mich",
+        "about-description-1": "Als Digitalstratege, Projektmanager und kreativer Lösungspartner leite ich seit über 13 Jahren digitale Transformationsprozesse für Unternehmen.",
+        "about-description-2": "Ich habe zahlreiche Projekte in den Bereichen digitale Transformation, CRM, Marketing und Design realisiert. Durch die Verbindung von Technologie und menschenzentrierten Ansätzen stärke ich die digitale Präsenz von Marken.",
+        "about-description-3": "Mit strategischem Denken und analytischem Ansatz manage ich erfolgreich komplexe Projekte und führe Teams zum Ziel. Kundenzufriedenheit und messbare Ergebnisse stehen für mich immer im Vordergrund.",
+        "about-skill-1-title": "Strategisches Denken",
+        "about-skill-1-description": "Datenbasierte Entscheidungsfindung und langfristige Planung",
+        "about-skill-2-title": "Teamführung",
+        "about-skill-2-description": "Agile Managementmethoden und Team-Motivation",
+        "about-skill-3-title": "Technisches Know-how",
+        "about-skill-3-description": "Expertise in digitalen Plattformen und Softwarelösungen",
+        "about-skill-4-title": "Kundenorientierung",
+        "about-skill-4-description": "Benutzererfahrung und Kundenzufriedenheit als Priorität",
+        "experience-title": "Erfahrung",
+        "experience-1-title": "Freiberuflicher Digital Marketing Manager",
+        "experience-1-date": "2020 – heute",
+        "experience-1-point-1": "Entwicklung digitaler Marketingstrategien für KMU in verschiedenen Branchen",
+        "experience-1-point-2": "30% Umsatzsteigerung auf E-Commerce-Plattformen",
+        "experience-1-point-3": "50% Wachstum im organischen Traffic durch SEO-Optimierung",
+        "experience-1-point-4": "Steigerung der Markenbekanntheit durch Social Media Management und Content-Strategie",
+        "experience-2-title": "GSK – Senior Customer Management Specialist",
+        "experience-2-date": "2015 – 2018",
+        "experience-2-point-1": "20% weniger Kundenbeschwerden durch Optimierung der CRM-Prozesse",
+        "experience-2-point-2": "95% Zielerreichung bei den Jahreszielen",
+        "experience-2-point-3": "Steuerung von Marketingstrategien durch Kundendatenanalyse",
+        "experience-2-point-4": "Verwaltung von 180 Apotheken und Leistungsbewertung",
+        "experience-3-title": "Turkcell – Technologiespezialist",
+        "experience-3-date": "2009 – 2011",
+        "experience-3-point-1": "15% Steigerung des Verkaufs von Smart Devices",
+        "experience-3-point-2": "Verbesserung der Shop-Performance durch Team-Trainings",
+        "experience-3-point-3": "Optimierung von Prozessen zur Verbesserung der Kundenerfahrung",
+        "experience-3-point-4": "Koordination technischer Schulungen für neue Produkteinführungen",
+        "experience-4-title": "Teknosa – Filialleiter",
+        "experience-4-date": "2005 – 2008",
+        "experience-4-point-1": "Sicherstellung von operativer Effizienz und Lageroptimierung",
+        "experience-4-point-2": "Steigerung der Besucher-Konversionsrate",
+        "experience-4-point-3": "Stetiger Erfolg bei Umsatzzielen und regionale Führungsposition",
+        "experience-4-point-4": "Schaffung einer kundenorientierten Unternehmenskultur im Geschäft",
+        "projects-title": "Projekte",
+        "project-1-title": "Beautiq – Beauty Salon Management",
+        "project-1-date": "2024–2025",
+        "project-1-description": "Eine umfassende mobile App und Managementsystem für Schönheitssalons mit Termin-, Kunden- und Inventarverwaltung.",
+        "project-1-result": "Ergebnis: 40% mehr Zufriedenheit bei Termin- und Kundenmanagement",
+        "project-1-link": "App ansehen",
+        "project-2-title": "Antalya Turkuaz Webseite",
+        "project-2-date": "2025",
+        "project-2-description": "SEO-optimierte, responsive Unternehmenswebsite für Antalya Turkuaz zur Präsentation von Sicherheitskamerasystemen, IT-Lösungen und Markenvertretungen.",
+        "project-2-result": "Ergebnis: 60% mehr organischer Traffic, 30% mehr Kundenanfragen",
+        "project-2-link": "Webseite ansehen",
+        "project-3-title": "Hanedan Konakları Digitaler Katalog",
+        "project-3-date": "2024",
+        "project-3-description": "Interaktives digitales Katalogdesign für ein Luxuswohnprojekt mit 3D-Visualisierungen, virtuellen Rundgängen und dynamischer Preisgestaltung.",
+        "project-3-result": "Ergebnis: Ein kreativer und prestigeträchtiger Katalog, der die Arbeit der Vertriebsmitarbeiter erleichtert",
+        "project-3-link": "Katalog ansehen",
+        "project-4-title": "Değirmen Fabrik Produktionsleitfaden und Trainingssystem",
+        "project-4-date": "2024",
+        "project-4-description": "Umfassender digitaler Leitfaden zur Beschreibung der Produktionsprozesse einer Fabrik. Zusätzlich wurden digitale Inhalte, Trainingsmodule und Prüfungen entwickelt.",
+        "project-4-result": "Ergebnis: 35% weniger Einarbeitungszeit für Mitarbeiter, 90% mehr Erfolg bei Prüfungen nach dem Training",
+        "project-4-link": "Leitfaden ansehen",
+        "skills-title": "Fähigkeiten",
+        "skill-1-title": "Strategisches Marketing",
+        "skill-1-description": "Digitale Strategie, Markenpositionierung",
+        "skill-2-title": "Digitale Analytik und CRM",
+        "skill-2-description": "Datenanalyse, Kundenbeziehungen",
+        "skill-3-title": "Projektmanagement",
+        "skill-3-description": "Prozessmanagement, Projektplanung",
+        "skill-4-title": "Grafik- und Webdesign",
+        "skill-4-description": "UI/UX, visuelle Kommunikation",
+        "skill-5-title": "SEO und Performance Advertising",
+        "skill-5-description": "Google Ads, Content-Strategie",
+        "skill-6-title": "Teamführung und Training",
+        "skill-6-description": "Führung, Mentoring",
+        "skill-7-title": "Vertriebs- und Betriebsmanagement",
+        "skill-7-description": "Prozessoptimierung, Effizienz",
+        "contact-title": "Haben Sie eine Projektidee?",
+        "contact-description": "Kontaktieren Sie mich für Ihre digitale Transformationsreise!",
+        "contact-button": "Kontakt aufnehmen!",
+        "footer-copyright": "© 2025 Mücahit Özcan. Alle Rechte vorbehalten."
+    }),
+      fr: fillLang(en, {
+        title: "MÜCAHİT ÖZCAN – Expert en transformation digitale et chef de projet stratégique",
+        "nav-home": "Accueil",
+        "nav-about": "À propos",
+        "nav-experience": "Expérience",
+        "nav-projects": "Projets",
+        "nav-skills": "Compétences",
+        "nav-contact": "Contact",
+        "hero-title": "<span class='block md:inline'>Transformation Stratégique</span><br class='md:hidden'><span class='block md:inline'>avec la puissance digitale</span>",
+        "hero-description": "Avec plus de 13 ans d'expérience, j'accompagne les entreprises dans leur transformation digitale.",
+        "hero-projects-button": "Voir mes projets",
+        "hero-contact-button": "Me contacter",
+        "about-title": "À propos",
+        "about-description-1": "En tant que stratège digital, chef de projet et partenaire créatif, je dirige des processus de transformation digitale depuis plus de 13 ans.",
+        "about-description-2": "J'ai mené de nombreux projets en transformation digitale, CRM, marketing et design. En combinant la technologie et l'approche humaine, je renforce la présence digitale des marques.",
+        "about-description-3": "Avec une pensée stratégique et une approche analytique, je gère avec succès des projets complexes et mène les équipes vers leurs objectifs. La satisfaction client et les résultats mesurables sont toujours ma priorité.",
+        "about-skill-1-title": "Pensée stratégique",
+        "about-skill-1-description": "Prise de décision basée sur les données et planification à long terme",
+        "about-skill-2-title": "Leadership d'équipe",
+        "about-skill-2-description": "Méthodologies agiles et motivation des équipes",
+        "about-skill-3-title": "Expertise technique",
+        "about-skill-3-description": "Expertise des plateformes digitales et solutions logicielles",
+        "about-skill-4-title": "Orientation client",
+        "about-skill-4-description": "Expérience utilisateur et satisfaction client comme priorité",
+        "experience-title": "Expérience",
+        "experience-1-title": "Consultant indépendant en marketing digital",
+        "experience-1-date": "2020 – aujourd'hui",
+        "experience-1-point-1": "Développement de stratégies marketing digital pour des PME dans divers secteurs",
+        "experience-1-point-2": "Augmentation de 30% des ventes sur les plateformes e-commerce",
+        "experience-1-point-3": "Croissance de 50% du trafic organique grâce à l'optimisation SEO",
+        "experience-1-point-4": "Renforcement de la notoriété de la marque via la gestion des réseaux sociaux et la stratégie de contenu",
+        "experience-2-title": "GSK – Responsable senior de la gestion client",
+        "experience-2-date": "2015 – 2018",
+        "experience-2-point-1": "Réduction de 20% des réclamations clients grâce à l'optimisation des processus CRM",
+        "experience-2-point-2": "Atteinte de 95% des objectifs annuels",
+        "experience-2-point-3": "Pilotage des stratégies marketing grâce à l'analyse des données clients",
+        "experience-2-point-4": "Gestion de 180 pharmacies et évaluation des performances",
+        "experience-3-title": "Turkcell – Spécialiste technologique",
+        "experience-3-date": "2009 – 2011",
+        "experience-3-point-1": "Augmentation de 15% des ventes d'appareils intelligents",
+        "experience-3-point-2": "Amélioration des performances des magasins grâce à la formation des équipes",
+        "experience-3-point-3": "Optimisation des processus pour améliorer l'expérience client",
+        "experience-3-point-4": "Coordination des formations techniques pour les lancements de nouveaux produits",
+        "experience-4-title": "Teknosa – Directeur de magasin",
+        "experience-4-date": "2005 – 2008",
+        "experience-4-point-1": "Assurer l'efficacité opérationnelle et l'optimisation des stocks",
+        "experience-4-point-2": "Augmentation du taux de conversion des visiteurs",
+        "experience-4-point-3": "Succès constant dans l'atteinte des objectifs de vente et leadership régional",
+        "experience-4-point-4": "Création d'une culture d'entreprise axée sur la satisfaction client",
+        "projects-title": "Projets",
+        "project-1-title": "Beautiq – Gestion de salon de beauté",
+        "project-1-date": "2024–2025",
+        "project-1-description": "Une application mobile complète et un système de gestion pour les salons de beauté, avec gestion des rendez-vous, des clients et des stocks.",
+        "project-1-result": "Résultat : augmentation de 40% de la satisfaction pour la gestion des rendez-vous et des clients",
+        "project-1-link": "Voir l'application",
+        "project-2-title": "Site web Antalya Turkuaz",
+        "project-2-date": "2025",
+        "project-2-description": "Site web d'entreprise optimisé SEO et responsive pour Antalya Turkuaz, présentant des systèmes de caméras de sécurité, des solutions informatiques et des marques de distribution régionale.",
+        "project-2-result": "Résultat : augmentation de 60% du trafic organique, 30% de demandes clients en plus",
+        "project-2-link": "Voir le site web",
+        "project-3-title": "Catalogue numérique Hanedan Konakları",
+        "project-3-date": "2024",
+        "project-3-description": "Conception de catalogue numérique interactif pour un projet résidentiel de luxe, avec visualisations 3D, visites virtuelles et tarification dynamique.",
+        "project-3-result": "Résultat : un catalogue créatif et prestigieux qui facilite le travail des commerciaux",
+        "project-3-link": "Voir le catalogue",
+        "project-4-title": "Guide de production et système de formation Değirmen",
+        "project-4-date": "2024",
+        "project-4-description": "Guide numérique complet détaillant le fonctionnement du système de production d'une usine. Contenus digitaux, modules de formation et examens développés pour l'entreprise.",
+        "project-4-result": "Résultat : réduction de 35% du temps d'apprentissage des employés, augmentation de 90% du taux de réussite aux examens après formation",
+        "project-4-link": "Voir le guide",
+        "skills-title": "Compétences",
+        "skill-1-title": "Marketing stratégique",
+        "skill-1-description": "Stratégie digitale, positionnement de marque",
+        "skill-2-title": "Analytique digitale et CRM",
+        "skill-2-description": "Analyse de données, relations clients",
+        "skill-3-title": "Gestion de projet",
+        "skill-3-description": "Gestion des processus, planification de projet",
+        "skill-4-title": "Conception graphique et web",
+        "skill-4-description": "UI/UX, communication visuelle",
+        "skill-5-title": "SEO et publicité à la performance",
+        "skill-5-description": "Google Ads, stratégie de contenu",
+        "skill-6-title": "Gestion d'équipe et formation",
+        "skill-6-description": "Leadership, mentorat",
+        "skill-7-title": "Gestion des ventes et des opérations",
+        "skill-7-description": "Optimisation des processus, efficacité",
+        "contact-title": "Vous avez une idée de projet ?",
+        "contact-description": "Contactez-moi pour votre parcours de transformation digitale !",
+        "contact-button": "Me contacter !",
+        "footer-copyright": "© 2025 Mücahit Özcan. Tous droits réservés."
+    }),
+      es: fillLang(en, {
+        title: "MÜCAHİT ÖZCAN – Experto en Transformación Digital y Líder de Proyectos Estratégicos",
+        "nav-home": "Inicio",
+        "nav-about": "Sobre mí",
+        "nav-experience": "Experiencia",
+        "nav-projects": "Proyectos",
+        "nav-skills": "Habilidades",
+        "nav-contact": "Contacto",
+        "hero-title": "<span class='block md:inline'>Transformación Estratégica</span><br class='md:hidden'><span class='block md:inline'>con Poder Digital</span>",
+        "hero-description": "Con más de 13 años de experiencia, guío a las empresas en la era digital.",
+        "hero-projects-button": "Ver mis proyectos",
+        "hero-contact-button": "Contáctame",
+        "about-title": "Sobre mí",
+        "about-description-1": "Como estratega digital, gestor de proyectos y socio creativo, lidero procesos de transformación digital desde hace más de 13 años.",
+        "about-description-2": "He realizado numerosos proyectos en transformación digital, CRM, marketing y diseño. Combinando tecnología y un enfoque humano, potencio la presencia digital de las marcas.",
+        "about-description-3": "Con pensamiento estratégico y enfoque analítico, gestiono con éxito proyectos complejos y lidero equipos hacia los objetivos. Siempre priorizo la satisfacción del cliente y los resultados medibles.",
+        "about-skill-1-title": "Pensamiento estratégico",
+        "about-skill-1-description": "Toma de decisiones basada en datos y planificación a largo plazo",
+        "about-skill-2-title": "Liderazgo de equipo",
+        "about-skill-2-description": "Metodologías ágiles y motivación del equipo",
+        "about-skill-3-title": "Conocimiento técnico",
+        "about-skill-3-description": "Experiencia en plataformas digitales y soluciones de software",
+        "about-skill-4-title": "Orientación al cliente",
+        "about-skill-4-description": "Prioridad en la experiencia y satisfacción del cliente",
+        "experience-title": "Experiencia",
+        "experience-1-title": "Consultor independiente de marketing digital",
+        "experience-1-date": "2020 – presente",
+        "experience-1-point-1": "Desarrollo de estrategias de marketing digital para pymes en diversos sectores",
+        "experience-1-point-2": "Aumento del 30% en ventas en plataformas de comercio electrónico",
+        "experience-1-point-3": "Crecimiento del 50% en tráfico orgánico gracias a la optimización SEO",
+        "experience-1-point-4": "Incremento de la notoriedad de marca mediante gestión de redes sociales y estrategia de contenidos",
+        "experience-2-title": "GSK – Especialista senior en gestión de clientes",
+        "experience-2-date": "2015 – 2018",
+        "experience-2-point-1": "Reducción del 20% en reclamaciones de clientes mediante optimización de procesos CRM",
+        "experience-2-point-2": "Logro del 95% de los objetivos anuales",
+        "experience-2-point-3": "Dirección de estrategias de marketing mediante análisis de datos de clientes",
+        "experience-2-point-4": "Gestión de 180 farmacias y evaluación de desempeño",
+        "experience-3-title": "Turkcell – Especialista en tecnología",
+        "experience-3-date": "2009 – 2011",
+        "experience-3-point-1": "Aumento del 15% en ventas de dispositivos inteligentes",
+        "experience-3-point-2": "Mejora del rendimiento de tiendas mediante formación de equipos",
+        "experience-3-point-3": "Optimización de procesos para mejorar la experiencia del cliente",
+        "experience-3-point-4": "Coordinación de formación técnica para lanzamientos de nuevos productos",
+        "experience-4-title": "Teknosa – Gerente de tienda",
+        "experience-4-date": "2005 – 2008",
+        "experience-4-point-1": "Garantizar la eficiencia operativa y la optimización de inventarios",
+        "experience-4-point-2": "Aumento de la tasa de conversión de visitantes",
+        "experience-4-point-3": "Éxito constante en objetivos de ventas y liderazgo regional",
+        "experience-4-point-4": "Creación de una cultura empresarial centrada en la satisfacción del cliente",
+        "projects-title": "Proyectos",
+        "project-1-title": "Beautiq – Gestión de salón de belleza",
+        "project-1-date": "2024–2025",
+        "project-1-description": "Aplicación móvil integral y sistema de gestión para salones de belleza, con gestión de citas, clientes e inventario.",
+        "project-1-result": "Resultado: aumento del 40% en satisfacción para la gestión de citas y clientes",
+        "project-1-link": "Ver la app",
+        "project-2-title": "Sitio web de Antalya Turkuaz",
+        "project-2-date": "2025",
+        "project-2-description": "Sitio web corporativo optimizado para SEO y responsive para Antalya Turkuaz, presentando sistemas de cámaras de seguridad, soluciones IT y marcas de distribución regional.",
+        "project-2-result": "Resultado: aumento del 60% en tráfico orgánico, 30% más solicitudes de clientes",
+        "project-2-link": "Ver el sitio web",
+        "project-3-title": "Catálogo digital Hanedan Konakları",
+        "project-3-date": "2024",
+        "project-3-description": "Diseño de catálogo digital interactivo para un proyecto residencial de lujo, con visualizaciones 3D, recorridos virtuales y precios dinámicos.",
+        "project-3-result": "Resultado: un catálogo creativo y prestigioso que facilita el trabajo de los comerciales",
+        "project-3-link": "Ver el catálogo",
+        "project-4-title": "Guía de producción y sistema de formación Değirmen",
+        "project-4-date": "2024",
+        "project-4-description": "Guía digital integral que detalla el funcionamiento del sistema de producción de una fábrica. Contenidos digitales, módulos de formación y exámenes desarrollados para la empresa.",
+        "project-4-result": "Resultado: reducción del 35% en el tiempo de aprendizaje de los empleados, aumento del 90% en la tasa de éxito en exámenes tras la formación",
+        "project-4-link": "Ver la guía",
+        "skills-title": "Habilidades",
+        "skill-1-title": "Marketing estratégico",
+        "skill-1-description": "Estrategia digital, posicionamiento de marca",
+        "skill-2-title": "Analítica digital y CRM",
+        "skill-2-description": "Análisis de datos, relaciones con clientes",
+        "skill-3-title": "Gestión de proyectos",
+        "skill-3-description": "Gestión de procesos, planificación de proyectos",
+        "skill-4-title": "Diseño gráfico y web",
+        "skill-4-description": "UI/UX, comunicación visual",
+        "skill-5-title": "SEO y publicidad de rendimiento",
+        "skill-5-description": "Google Ads, estrategia de contenidos",
+        "skill-6-title": "Gestión de equipos y formación",
+        "skill-6-description": "Liderazgo, mentoría",
+        "skill-7-title": "Gestión de ventas y operaciones",
+        "skill-7-description": "Optimización de procesos, eficiencia",
+        "contact-title": "¿Tienes una idea de proyecto?",
+        "contact-description": "¡Contáctame para tu viaje de transformación digital!",
+        "contact-button": "Contáctame!",
+        "footer-copyright": "© 2025 Mücahit Özcan. Todos los derechos reservados."
+    }),
+      it: fillLang(en, {
+        title: "MÜCAHİT ÖZCAN – Esperto di Trasformazione Digitale e Leader di Progetti Strategici",
+        "nav-home": "Home",
+        "nav-about": "Chi sono",
+        "nav-experience": "Esperienza",
+        "nav-projects": "Progetti",
+        "nav-skills": "Competenze",
+        "nav-contact": "Contatto",
+        "hero-title": "<span class='block md:inline'>Trasformazione Strategica</span><br class='md:hidden'><span class='block md:inline'>con Potere Digitale</span>",
+        "hero-description": "Con oltre 13 anni di esperienza, guido le aziende nell'era digitale.",
+        "hero-projects-button": "Guarda i miei progetti",
+        "hero-contact-button": "Contattami",
+        "about-title": "Chi sono",
+        "about-description-1": "Come stratega digitale, project manager e partner creativo, guido processi di trasformazione digitale da oltre 13 anni.",
+        "about-description-2": "Ho realizzato numerosi progetti in trasformazione digitale, CRM, marketing e design. Combinando tecnologia e approccio umano, rafforzo la presenza digitale dei brand.",
+        "about-description-3": "Con pensiero strategico e approccio analitico, gestisco con successo progetti complessi e guido i team verso gli obiettivi. Metto sempre al primo posto la soddisfazione del cliente e i risultati misurabili.",
+        "about-skill-1-title": "Pensiero strategico",
+        "about-skill-1-description": "Decisioni basate sui dati e pianificazione a lungo termine",
+        "about-skill-2-title": "Leadership di squadra",
+        "about-skill-2-description": "Metodologie agili e motivazione del team",
+        "about-skill-3-title": "Conoscenza tecnica",
+        "about-skill-3-description": "Esperienza in piattaforme digitali e soluzioni software",
+        "about-skill-4-title": "Orientamento al cliente",
+        "about-skill-4-description": "Priorità all'esperienza e soddisfazione del cliente",
+        "experience-title": "Esperienza",
+        "experience-1-title": "Consulente indipendente di marketing digitale",
+        "experience-1-date": "2020 – presente",
+        "experience-1-point-1": "Sviluppo di strategie di marketing digitale per PMI in vari settori",
+        "experience-1-point-2": "Aumento del 30% delle vendite su piattaforme e-commerce",
+        "experience-1-point-3": "Crescita del 50% del traffico organico grazie all'ottimizzazione SEO",
+        "experience-1-point-4": "Incremento della notorietà del brand tramite gestione social media e strategia di contenuti",
+        "experience-2-title": "GSK – Senior Customer Management Specialist",
+        "experience-2-date": "2015 – 2018",
+        "experience-2-point-1": "Riduzione del 20% dei reclami clienti tramite ottimizzazione processi CRM",
+        "experience-2-point-2": "Raggiungimento del 95% degli obiettivi annuali",
+        "experience-2-point-3": "Gestione strategie di marketing tramite analisi dati clienti",
+        "experience-2-point-4": "Gestione di 180 farmacie e valutazione delle prestazioni",
+        "experience-3-title": "Turkcell – Specialista Tecnologico",
+        "experience-3-date": "2009 – 2011",
+        "experience-3-point-1": "Aumento del 15% delle vendite di dispositivi smart",
+        "experience-3-point-2": "Miglioramento delle performance dei negozi tramite formazione dei team",
+        "experience-3-point-3": "Ottimizzazione dei processi per migliorare l'esperienza cliente",
+        "experience-3-point-4": "Coordinamento della formazione tecnica per il lancio di nuovi prodotti",
+        "experience-4-title": "Teknosa – Store Manager",
+        "experience-4-date": "2005 – 2008",
+        "experience-4-point-1": "Garantire efficienza operativa e ottimizzazione dell'inventario",
+        "experience-4-point-2": "Aumento del tasso di conversione dei visitatori",
+        "experience-4-point-3": "Successo costante negli obiettivi di vendita e leadership regionale",
+        "experience-4-point-4": "Creazione di una cultura aziendale orientata alla soddisfazione del cliente",
+        "projects-title": "Progetti",
+        "project-1-title": "Beautiq – Gestione salone di bellezza",
+        "project-1-date": "2024–2025",
+        "project-1-description": "App mobile completa e sistema di gestione per saloni di bellezza, con gestione appuntamenti, clienti e inventario.",
+        "project-1-result": "Risultato: aumento del 40% della soddisfazione nella gestione di appuntamenti e clienti",
+        "project-1-link": "Guarda l'app",
+        "project-2-title": "Sito web Antalya Turkuaz",
+        "project-2-date": "2025",
+        "project-2-description": "Sito web aziendale ottimizzato SEO e responsive per Antalya Turkuaz, con sistemi di videosorveglianza, soluzioni IT e marchi di distribuzione regionale.",
+        "project-2-result": "Risultato: aumento del 60% del traffico organico, 30% in più di richieste clienti",
+        "project-2-link": "Guarda il sito web",
+        "project-3-title": "Catalogo digitale Hanedan Konakları",
+        "project-3-date": "2024",
+        "project-3-description": "Design di un catalogo digitale interattivo per un progetto residenziale di lusso, con visualizzazioni 3D, tour virtuali e prezzi dinamici.",
+        "project-3-result": "Risultato: un catalogo creativo e prestigioso che facilita il lavoro dei commerciali",
+        "project-3-link": "Guarda il catalogo",
+        "project-4-title": "Guida alla produzione e sistema di formazione Değirmen",
+        "project-4-date": "2024",
+        "project-4-description": "Guida digitale completa che dettaglia il funzionamento del sistema produttivo di una fabbrica. Contenuti digitali, moduli formativi ed esami sviluppati per l'azienda.",
+        "project-4-result": "Risultato: riduzione del 35% dei tempi di apprendimento dei dipendenti, aumento del 90% del tasso di successo agli esami dopo la formazione",
+        "project-4-link": "Guida alla produzione",
+        "skills-title": "Competenze",
+        "skill-1-title": "Marketing strategico",
+        "skill-1-description": "Strategia digitale, posizionamento del brand",
+        "skill-2-title": "Analisi digitale e CRM",
+        "skill-2-description": "Analisi dati, relazioni con i clienti",
+        "skill-3-title": "Gestione progetti",
+        "skill-3-description": "Gestione processi, pianificazione progetti",
+        "skill-4-title": "Graphic & Web Design",
+        "skill-4-description": "UI/UX, comunicazione visiva",
+        "skill-5-title": "SEO e performance marketing",
+        "skill-5-description": "Google Ads, strategia di contenuti",
+        "skill-6-title": "Gestione team e formazione",
+        "skill-6-description": "Leadership, mentoring",
+        "skill-7-title": "Gestione vendite e operazioni",
+        "skill-7-description": "Ottimizzazione processi, efficacità",
+        "contact-title": "Hai un'idea di progetto?",
+        "contact-description": "Contattami per il tuo viaggio di trasformazione digitale!",
+        "contact-button": "Contattami!",
+        "footer-copyright": "© 2025 Mücahit Özcan. Tutti i diritti riservati."
+    }),
+      zh: fillLang(en, {
+        title: "MÜCAHİT ÖZCAN – 数字化转型专家与战略项目领导者",
+        "nav-home": "首页",
+        "nav-about": "关于我",
+        "nav-experience": "经验",
+        "nav-projects": "项目",
+        "nav-skills": "技能",
+        "nav-contact": "联系",
+        "hero-title": "<span class='block md:inline'>战略性转型</span><br class='md:hidden'><span class='block md:inline'>数字驱动</span>",
+        "hero-description": "拥有13年以上经验，引领企业迈向数字时代。",
+        "hero-projects-button": "查看我的项目",
+        "hero-contact-button": "联系我",
+        "about-title": "关于我",
+        "about-description-1": "作为数字战略家、项目经理和创意合作伙伴，我在数字化转型领域拥有13年以上的领导经验。",
+        "about-description-2": "我在数字化转型、CRM、市场营销和设计方面完成了众多项目。结合技术与人性化视角，提升品牌的数字影响力。",
+        "about-description-3": "凭借战略思维和分析能力，成功管理复杂项目并带领团队实现目标。始终以客户满意和可衡量成果为首要目标。",
+        "about-skill-1-title": "战略思维",
+        "about-skill-1-description": "基于数据的决策与长期规划",
+        "about-skill-2-title": "团队领导力",
+        "about-skill-2-description": "敏捷方法与团队激励",
+        "about-skill-3-title": "技术知识",
+        "about-skill-3-description": "数字平台与软件解决方案经验",
+        "about-skill-4-title": "客户导向",
+        "about-skill-4-description": "以客户体验和满意度为优先",
+        "experience-title": "经验",
+        "experience-1-title": "独立数字营销顾问",
+        "experience-1-date": "2020 – 至今",
+        "experience-1-point-1": "为不同行业中小企业制定数字营销战略",
+        "experience-1-point-2": "电商平台销售增长30%",
+        "experience-1-point-3": "通过SEO优化实现有机流量增长50%",
+        "experience-1-point-4": "通过社交媒体管理和内容策略提升品牌知名度",
+        "experience-2-title": "GSK – 高级客户管理专员",
+        "experience-2-date": "2015 – 2018",
+        "experience-2-point-1": "通过优化CRM流程减少客户投诉20%",
+        "experience-2-point-2": "实现年度目标的95%",
+        "experience-2-point-3": "通过客户数据分析制定市场营销策略",
+        "experience-2-point-4": "管理180家药房并评估绩效",
+        "experience-3-title": "Turkcell – 技术专家",
+        "experience-3-date": "2009 – 2011",
+        "experience-3-point-1": "智能设备销售增长15%",
+        "experience-3-point-2": "通过团队培训提升门店业绩",
+        "experience-3-point-3": "优化流程提升客户体验",
+        "experience-3-point-4": "协调新产品发布的技术培训",
+        "experience-4-title": "Teknosa – 店长",
+        "experience-4-date": "2005 – 2008",
+        "experience-4-point-1": "确保运营效率和库存优化",
+        "experience-4-point-2": "提升访客转化率",
+        "experience-4-point-3": "持续实现销售目标并领导区域团队",
+        "experience-4-point-4": "打造以客户满意为核心的企业文化",
+        "projects-title": "项目",
+        "project-1-title": "Beautiq – 美容院管理",
+        "project-1-date": "2024–2025",
+        "project-1-description": "为美容院开发的综合移动应用和管理系统，涵盖预约、客户和库存管理。",
+        "project-1-result": "结果：预约和客户管理满意度提升40%",
+        "project-1-link": "查看应用",
+        "project-2-title": "Antalya Turkuaz 网站",
+        "project-2-date": "2025",
+        "project-2-description": "为Antalya Turkuaz打造的SEO优化、响应式企业官网，展示安防摄像头系统、IT解决方案和区域分销品牌。",
+        "project-2-result": "结果：有机流量提升60%，客户咨询增加30%",
+        "project-2-link": "查看网站",
+        "project-3-title": "Hanedan Konakları 数字目录",
+        "project-3-date": "2024",
+        "project-3-description": "为高端住宅项目设计的互动数字目录，包含3D可视化、虚拟参观和动态定价。",
+        "project-3-result": "结果：创新且高端的目录，助力销售团队工作",
+        "project-3-link": "查看目录",
+        "project-4-title": "Değirmen 生产指南与培训系统",
+        "project-4-date": "2024",
+        "project-4-description": "为工厂开发的全面数字生产指南，包含数字内容、培训模块和考试。",
+        "project-4-result": "结果：员工学习时间缩短35%，培训后考试通过率提升90%",
+        "project-4-link": "查看指南",
+        "skills-title": "技能",
+        "skill-1-title": "战略营销",
+        "skill-1-description": "数字战略，品牌定位",
+        "skill-2-title": "数字分析与CRM",
+        "skill-2-description": "数据分析，客户关系",
+        "skill-3-title": "项目管理",
+        "skill-3-description": "流程管理，项目规划",
+        "skill-4-title": "平面与网页设计",
+        "skill-4-description": "UI/UX，视觉传达",
+        "skill-5-title": "SEO与效果广告",
+        "skill-5-description": "Google广告，内容策略",
+        "skill-6-title": "团队管理与培训",
+        "skill-6-description": "领导力，指导",
+        "skill-7-title": "销售与运营管理",
+        "skill-7-description": "流程优化，效率提升",
+        "contact-title": "有项目想法吗？",
+        "contact-description": "欢迎联系我，开启您的数字化转型之旅！",
+        "contact-button": "联系我！",
+        "footer-copyright": "© 2025 Mücahit Özcan. 保留所有权利。"
+    }),
+      ar: fillLang(en, {
+        title: "مجاهد أوزجان – خبير التحول الرقمي وقائد المشاريع الاستراتيجية",
+        "nav-home": "الرئيسية",
+        "nav-about": "من أنا",
+        "nav-experience": "الخبرات",
+        "nav-projects": "المشاريع",
+        "nav-skills": "المهارات",
+        "nav-contact": "اتصل بي",
+        "hero-title": "<span class='block md:inline'>التحول الاستراتيجي</span><br class='md:hidden'><span class='block md:inline'>بقوة رقمية</span>",
+        "hero-description": "أكثر من 13 عامًا من الخبرة في قيادة الشركات نحو العصر الرقمي.",
+        "hero-projects-button": "عرض مشاريعي",
+        "hero-contact-button": "اتصل بي",
+        "about-title": "من أنا",
+        "about-description-1": "بصفتي استراتيجيًا رقميًا ومدير مشاريع وشريكًا إبداعيًا، أقود عمليات التحول الرقمي منذ أكثر من 13 عامًا.",
+        "about-description-2": "نفذت العديد من المشاريع في التحول الرقمي، وإدارة علاقات العملاء، والتسويق، والتصميم. أدمج بين التقنية والنهج الإنساني لتعزيز الحضور الرقمي للعلامات التجارية.",
+        "about-description-3": "بفضل التفكير الاستراتيجي والمنهج التحليلي، أدير المشاريع المعقدة بنجاح وأقود الفرق نحو الأهداف. أضع رضا العملاء والنتائج القابلة للقياس في المقام الأول دائمًا.",
+        "about-skill-1-title": "تفكير استراتيجي",
+        "about-skill-1-description": "اتخاذ قرارات مبنية على البيانات وتخطيط طويل الأمد",
+        "about-skill-2-title": "قيادة الفريق",
+        "about-skill-2-description": "منهجيات رشيقة وتحفيز الفريق",
+        "about-skill-3-title": "معرفة تقنية",
+        "about-skill-3-description": "خبرة في المنصات الرقمية وحلول البرمجيات",
+        "about-skill-4-title": "توجه نحو العميل",
+        "about-skill-4-description": "أولوية لتجربة ورضا العميل",
+        "experience-title": "الخبرات",
+        "experience-1-title": "استشاري تسويق رقمي مستقل",
+        "experience-1-date": "2020 – حتى الآن",
+        "experience-1-point-1": "تطوير استراتيجيات التسويق الرقمي للشركات الصغيرة والمتوسطة في قطاعات متنوعة",
+        "experience-1-point-2": "زيادة المبيعات بنسبة 30% على منصات التجارة الإلكترونية",
+        "experience-1-point-3": "نمو بنسبة 50% في الزيارات العضوية بفضل تحسين محركات البحث",
+        "experience-1-point-4": "زيادة الوعي بالعلامة التجارية من خلال إدارة وسائل التواصل الاجتماعي واستراتيجية المحتوى",
+        "experience-2-title": "GSK – أخصائي إدارة عملاء أول",
+        "experience-2-date": "2015 – 2018",
+        "experience-2-point-1": "تقليل شكاوى العملاء بنسبة 20% من خلال تحسين عمليات إدارة علاقات العملاء",
+        "experience-2-point-2": "تحقيق 95% من الأهداف السنوية",
+        "experience-2-point-3": "قيادة استراتيجيات التسويق من خلال تحليل بيانات العملاء",
+        "experience-2-point-4": "إدارة 180 صيدلية وتقييم الأداء",
+        "experience-3-title": "Turkcell – أخصائي تقني",
+        "experience-3-date": "2009 – 2011",
+        "experience-3-point-1": "زيادة مبيعات الأجهزة الذكية بنسبة 15%",
+        "experience-3-point-2": "تحسين أداء المتاجر من خلال تدريب الفرق",
+        "experience-3-point-3": "تحسين العمليات لتعزيز تجربة العملاء",
+        "experience-3-point-4": "تنسيق التدريب التقني لإطلاق المنتجات الجديدة",
+        "experience-4-title": "Teknosa – مدير متجر",
+        "experience-4-date": "2005 – 2008",
+        "experience-4-point-1": "ضمان الكفاءة التشغيلية وتحسين المخزون",
+        "experience-4-point-2": "زيادة معدل تحويل الزوار",
+        "experience-4-point-3": "نجاح مستمر في تحقيق أهداف المبيعات والقيادة الإقليمية",
+        "experience-4-point-4": "بناء ثقافة مؤسسية تركز على رضا العملاء",
+        "projects-title": "المشاريع",
+        "project-1-title": "Beautiq – إدارة صالون التجميل",
+        "project-1-date": "2024–2025",
+        "project-1-description": "تطبيق جوال ونظام إدارة متكامل لصالونات التجميل، يشمل إدارة المواعيد والعملاء والمخزون.",
+        "project-1-result": "النتيجة: زيادة رضا العملاء عن إدارة المواعيد بنسبة 40%",
+        "project-1-link": "عرض التطبيق",
+        "project-2-title": "موقع أنطاليا تركواز",
+        "project-2-date": "2025",
+        "project-2-description": "موقع إلكتروني مؤسسي متجاوب ومحسن لمحركات البحث لشركة أنطاليا تركواز، يعرض أنظمة كاميرات المراقبة وحلول تكنولوجيا المعلومات والعلامات التجارية الموزعة إقليميًا.",
+        "project-2-result": "النتيجة: زيادة الزيارات العضوية بنسبة 60% و30% زيادة في طلبات العملاء",
+        "project-2-link": "عرض الموقع",
+        "project-3-title": "كتالوج Hanedan Konakları الرقمي",
+        "project-3-date": "2024",
+        "project-3-description": "تصميم كتالوج رقمي تفاعلي لمشروع سكني فاخر، مع عروض ثلاثية الأبعاد وجولات افتراضية وتسعير ديناميكي.",
+        "project-3-result": "النتيجة: كتالوج إبداعي وراقي يسهل عمل فريق المبيعات",
+        "project-3-link": "عرض الكتالوج",
+        "project-4-title": "دليل الإنتاج ونظام التدريب Değirmen",
+        "project-4-date": "2024",
+        "project-4-description": "دليل رقمي شامل يوضح نظام الإنتاج في المصنع. تم تطوير محتوى رقمي ووحدات تدريبية واختبارات للشركة.",
+        "project-4-result": "النتيجة: تقليص وقت تعلم الموظفين بنسبة 35% وزيادة معدل النجاح في الاختبارات إلى 90% بعد التدريب",
+        "project-4-link": "عرض الدليل",
+        "skills-title": "المهارات",
+        "skill-1-title": "التسويق الاستراتيجي",
+        "skill-1-description": "استراتيجية رقمية، تموضع العلامة التجارية",
+        "skill-2-title": "التحليل الرقمي وإدارة علاقات العملاء",
+        "skill-2-description": "تحليل البيانات، علاقات العملاء",
+        "skill-3-title": "إدارة المشاريع",
+        "skill-3-description": "إدارة العمليات، تخطيط المشاريع",
+        "skill-4-title": "تصميم جرافيك وويب",
+        "skill-4-description": "واجهة المستخدم وتجربة المستخدم، الاتصال البصري",
+        "skill-5-title": "تحسين محركات البحث والإعلانات",
+        "skill-5-description": "إعلانات Google، استراتيجية المحتوى",
+        "skill-6-title": "إدارة الفرق والتدريب",
+        "skill-6-description": "القيادة، الإرشاد",
+        "skill-7-title": "إدارة المبيعات والعمليات",
+        "skill-7-description": "تحسين العمليات، الكفاءة",
+        "contact-title": "هل لديك فكرة مشروع؟",
+        "contact-description": "تواصل معي لبدء رحلة التحول الرقمي الخاصة بك!",
+        "contact-button": "اتصل بي!",
+        "footer-copyright": "© 2025 مجاهد أوزجان. جميع الحقوق محفوظة."
+    }),
+      ja: fillLang(en, {
+        title: "MÜCAHİT ÖZCAN – デジタルトランスフォーメーションの専門家・戦略プロジェクトリーダー",
+        "nav-home": "ホーム",
+        "nav-about": "私について",
+        "nav-experience": "経験",
+        "nav-projects": "プロジェクト",
+        "nav-skills": "スキル",
+        "nav-contact": "お問い合わせ",
+        "hero-title": "<span class='block md:inline'>戦略的変革</span><br class='md:hidden'><span class='block md:inline'>デジタルの力で</span>",
+        "hero-description": "13年以上の経験で企業のデジタル時代への移行をサポート。",
+        "hero-projects-button": "プロジェクトを見る",
+        "hero-contact-button": "お問い合わせ",
+        "about-title": "私について",
+        "about-description-1": "デジタル戦略家、プロジェクトマネージャー、クリエイティブパートナーとして、13年以上デジタルトランスフォーメーションをリードしています。",
+        "about-description-2": "デジタルトランスフォーメーション、CRM、マーケティング、デザイン分野で多数のプロジェクトを実施。テクノロジーと人間的アプローチを融合し、ブランドのデジタルプレゼンスを強化します。",
+        "about-description-3": "戦略的思考と分析的アプローチで複雑なプロジェクトを成功裏に管理し、チームを目標達成へ導きます。常に顧客満足と測定可能な成果を最優先します。",
+        "about-skill-1-title": "戦略的思考",
+        "about-skill-1-description": "データに基づく意思決定と長期的な計画",
+        "about-skill-2-title": "チームリーダーシップ",
+        "about-skill-2-description": "アジャイル手法とチームのモチベーション向上",
+        "about-skill-3-title": "技術知識",
+        "about-skill-3-description": "デジタルプラットフォームとソフトウェアソリューションの経験",
+        "about-skill-4-title": "顧客志向",
+        "about-skill-4-description": "顧客体験と満足度を最優先",
+        "experience-title": "経験",
+        "experience-1-title": "フリーランスデジタルマーケティングコンサルタント",
+        "experience-1-date": "2020年～現在",
+        "experience-1-point-1": "様々な業界の中小企業向けにデジタルマーケティング戦略を策定",
+        "experience-1-point-2": "ECプラットフォームで売上30%増加",
+        "experience-1-point-3": "SEO最適化によりオーガニックトラフィック50%増加",
+        "experience-1-point-4": "SNS運用とコンテンツ戦略でブランド認知度向上",
+        "experience-2-title": "GSK – シニア顧客管理スペシャリスト",
+        "experience-2-date": "2015年～2018年",
+        "experience-2-point-1": "CRMプロセス最適化で顧客クレーム20%削減",
+        "experience-2-point-2": "年間目標の95%を達成",
+        "experience-2-point-3": "顧客データ分析によるマーケティング戦略の立案",
+        "experience-2-point-4": "180の薬局を管理し、パフォーマンスを評価",
+        "experience-3-title": "Turkcell – テクノロジースペシャリスト",
+        "experience-3-date": "2009年～2011年",
+        "experience-3-point-1": "スマートデバイスの売上15%増加",
+        "experience-3-point-2": "チーム研修による店舗パフォーマンス向上",
+        "experience-3-point-3": "プロセス最適化で顧客体験を改善",
+        "experience-3-point-4": "新製品発売のための技術研修を調整",
+        "experience-4-title": "Teknosa – 店長",
+        "experience-4-date": "2005年～2008年",
+        "experience-4-point-1": "運営効率と在庫最適化の確保",
+        "experience-4-point-2": "来店者のコンバージョン率向上",
+        "experience-4-point-3": "継続的な売上目標達成と地域リーダーシップ",
+        "experience-4-point-4": "顧客満足を重視した企業文化の構築",
+        "projects-title": "プロジェクト",
+        "project-1-title": "Beautiq – サロン管理",
+        "project-1-date": "2024–2025",
+        "project-1-description": "美容サロン向けの総合モバイルアプリと管理システム。予約、顧客、在庫管理を網羅。",
+        "project-1-result": "結果：予約・顧客管理の満足度が40%向上",
+        "project-1-link": "アプリを見る",
+        "project-2-title": "Antalya Turkuaz ウェブサイト",
+        "project-2-date": "2025",
+        "project-2-description": "Antalya TurkuazのためのSEO最適化・レスポンシブな企業ウェブサイト。監視カメラシステム、ITソリューション、地域ブランドを紹介。",
+        "project-2-result": "結果：オーガニックトラフィック60%増加、顧客問い合わせ30%増加",
+        "project-2-link": "ウェブサイトを見る",
+        "project-3-title": "Hanedan Konakları デジタルカタログ",
+        "project-3-date": "2024",
+        "project-3-description": "高級住宅プロジェクト向けのインタラクティブなデジタルカタログ。3Dビジュアル、バーチャルツアー、動的価格を搭載。",
+        "project-3-result": "結果：営業チームの業務を支援するクリエイティブで高級感のあるカタログ",
+        "project-3-link": "カタログを見る",
+        "project-4-title": "Değirmen 生産ガイド・研修システム",
+        "project-4-date": "2024",
+        "project-4-description": "工場の生産システムを詳細に説明する総合デジタルガイド。デジタルコンテンツ、研修モジュール、試験を開発。",
+        "project-4-result": "結果：従業員の学習時間が35%短縮、研修後の試験合格率が90%に向上",
+        "project-4-link": "ガイドを見る",
+        "skills-title": "スキル",
+        "skill-1-title": "戦略マーケティング",
+        "skill-1-description": "デジタル戦略、ブランドポジショニング",
+        "skill-2-title": "デジタル分析・CRM",
+        "skill-2-description": "データ分析、顧客関係",
+        "skill-3-title": "プロジェクト管理",
+        "skill-3-description": "プロセス管理、プロジェクト計画",
+        "skill-4-title": "グラフィック・ウェブデザイン",
+        "skill-4-description": "UI/UX、ビジュアルコミュニケーション",
+        "skill-5-title": "SEO・パフォーマンス広告",
+        "skill-5-description": "Google広告、コンテンツ戦略",
+        "skill-6-title": "チーム管理・研修",
+        "skill-6-description": "リーダーシップ、メンタリング",
+        "skill-7-title": "営業・オペレーション管理",
+        "skill-7-description": "プロセス最適化、効率化",
+        "contact-title": "プロジェクトのアイデアがありますか？",
+        "contact-description": "デジタルトランスフォーメーションの旅を始めるならご連絡ください！",
+        "contact-button": "お問い合わせ！",
+        "footer-copyright": "© 2025 Mücahit Özcan. 全著作権所有。"
+    }),
+      ko: fillLang(en, {
+        title: "MÜCAHİT ÖZCAN – 디지털 전환 전문가 및 전략 프로젝트 리더",
+        "nav-home": "홈",
+        "nav-about": "소개",
+        "nav-experience": "경력",
+        "nav-projects": "프로젝트",
+        "nav-skills": "기술",
+        "nav-contact": "연락처",
+        "hero-title": "<span class='block md:inline'>전략적 전환</span><br class='md:hidden'><span class='block md:inline'>디지털 파워와 함께</span>",
+        "hero-description": "13년 이상의 경험으로 기업의 디지털 시대 진입을 이끕니다.",
+        "hero-projects-button": "내 프로젝트 보기",
+        "hero-contact-button": "연락하기",
+        "about-title": "소개",
+        "about-description-1": "디지털 전략가, 프로젝트 매니저, 크리에이티브 파트너로서 13년 넘게 디지털 전환을 이끌고 있습니다.",
+        "about-description-2": "디지털 전환, CRM, 마케팅, 디자인 등 다양한 프로젝트를 수행했습니다. 기술과 인간 중심의 접근을 결합하여 브랜드의 디지털 존재감을 강화합니다.",
+        "about-description-3": "전략적 사고와 분석적 접근으로 복잡한 프로젝트를 성공적으로 관리하고 팀을 목표로 이끕니다. 항상 고객 만족과 측정 가능한 결과를 최우선으로 합니다.",
+        "about-skill-1-title": "전략적 사고",
+        "about-skill-1-description": "데이터 기반 의사결정 및 장기 계획",
+        "about-skill-2-title": "팀 리더십",
+        "about-skill-2-description": "애자일 방법론 및 팀 동기부여",
+        "about-skill-3-title": "기술 지식",
+        "about-skill-3-description": "디지털 플랫폼 및 소프트웨어 솔루션 경험",
+        "about-skill-4-title": "고객 중심",
+        "about-skill-4-description": "고객 경험과 만족을 최우선",
+        "experience-title": "경력",
+        "experience-1-title": "프리랜서 디지털 마케팅 컨설턴트",
+        "experience-1-date": "2020 – 현재",
+        "experience-1-point-1": "다양한 산업의 중소기업을 위한 디지털 마케팅 전략 개발",
+        "experience-1-point-2": "이커머스 플랫폼 매출 30% 증가",
+        "experience-1-point-3": "SEO 최적화로 유기적 트래픽 50% 증가",
+        "experience-1-point-4": "SNS 관리 및 콘텐츠 전략으로 브랜드 인지도 향상",
+        "experience-2-title": "GSK – 시니어 고객 관리 전문가",
+        "experience-2-date": "2015 – 2018",
+        "experience-2-point-1": "CRM 프로세스 최적화로 고객 불만 20% 감소",
+        "experience-2-point-2": "연간 목표의 95% 달성",
+        "experience-2-point-3": "고객 데이터 분석을 통한 마케팅 전략 수립",
+        "experience-2-point-4": "180개 약국 관리 및 성과 평가",
+        "experience-3-title": "Turkcell – 기술 전문가",
+        "experience-3-date": "2009 – 2011",
+        "experience-3-point-1": "스마트 기기 판매 15% 증가",
+        "experience-3-point-2": "팀 교육을 통한 매장 성과 향상",
+        "experience-3-point-3": "프로세스 최적화로 고객 경험 개선",
+        "experience-3-point-4": "신제품 출시를 위한 기술 교육 조율",
+        "experience-4-title": "Teknosa – 매장 관리자",
+        "experience-4-date": "2005 – 2008",
+        "experience-4-point-1": "운영 효율성 및 재고 최적화 보장",
+        "experience-4-point-2": "방문자 전환율 증가",
+        "experience-4-point-3": "지속적인 매출 목표 달성 및 지역 리더십",
+        "experience-4-point-4": "고객 만족 중심의 기업 문화 구축",
+        "projects-title": "프로젝트",
+        "project-1-title": "Beautiq – 뷰티 살롱 관리",
+        "project-1-date": "2024–2025",
+        "project-1-description": "뷰티 살롱을 위한 통합 모바일 앱 및 관리 시스템. 예약, 고객, 재고 관리 포함.",
+        "project-1-result": "결과: 예약 및 고객 관리 만족도 40% 증가",
+        "project-1-link": "앱 보기",
+        "project-2-title": "Antalya Turkuaz 웹사이트",
+        "project-2-date": "2025",
+        "project-2-description": "Antalya Turkuaz를 위한 SEO 최적화 및 반응형 기업 웹사이트. 보안 카메라 시스템, IT 솔루션, 지역 유통 브랜드 소개.",
+        "project-2-result": "결과: 유기적 트래픽 60% 증가, 고객 문의 30% 증가",
+        "project-2-link": "웹사이트 보기",
+        "project-3-title": "Hanedan Konakları 디지털 카탈로그",
+        "project-3-date": "2024",
+        "project-3-description": "고급 주택 프로젝트를 위한 인터랙티브 디지털 카탈로그. 3D 시각화, 가상 투어, 동적 가격 포함.",
+        "project-3-result": "결과: 영업팀의 업무를 돕는 창의적이고 고급스러운 카탈로그",
+        "project-3-link": "카탈로그 보기",
+        "project-4-title": "Değirmen 생산 가이드 및 교육 시스템",
+        "project-4-date": "2024",
+        "project-4-description": "공장 생산 시스템을 자세히 설명하는 종합 디지털 가이드. 디지털 콘텐츠, 교육 모듈, 시험 개발.",
+        "project-4-result": "결과: 직원 학습 시간 35% 단축, 교육 후 시험 합격률 90% 증가",
+        "project-4-link": "가이드 보기",
+        "skills-title": "기술",
+        "skill-1-title": "전략 마케팅",
+        "skill-1-description": "디지털 전략, 브랜드 포지셔닝",
+        "skill-2-title": "디지털 분석 및 CRM",
+        "skill-2-description": "데이터 분석, 고객 관계",
+        "skill-3-title": "프로젝트 관리",
+        "skill-3-description": "프로세스 관리, 프로젝트 계획",
+        "skill-4-title": "그래픽 및 웹 디자인",
+        "skill-4-description": "UI/UX, 시각 커뮤니케이션",
+        "skill-5-title": "SEO 및 퍼포먼스 광고",
+        "skill-5-description": "Google 광고, 콘텐츠 전략",
+        "skill-6-title": "팀 관리 및 교육",
+        "skill-6-description": "리더십, 멘토링",
+        "skill-7-title": "영업 및 운영 관리",
+        "skill-7-description": "프로세스 최적화, 효율성",
+        "contact-title": "프로젝트 아이디어가 있으신가요?",
+        "contact-description": "디지털 전환 여정을 위해 연락해 주세요!",
+        "contact-button": "연락하기!",
+        "footer-copyright": "© 2025 Mücahit Özcan. 모든 권리 보유."
+    }),
+    ru: fillLang(en, {
+    title: "MÜCAHİT ÖZCAN – Эксперт по цифровой трансформации и лидер стратегических проектов",
+    "nav-home": "Главная",
+    "nav-about": "Обо мне",
+    "nav-experience": "Опыт",
+    "nav-projects": "Проекты",
+    "nav-skills": "Навыки",
+    "nav-contact": "Контакты",
+    "hero-title": "<span class='block md:inline'>Стратегическая трансформация</span><br class='md:hidden'><span class='block md:inline'>с цифровой мощью</span>",
+    "hero-description": "Более 13 лет опыта в сопровождении компаний в цифровую эпоху.",
+    "hero-projects-button": "Посмотреть проекты",
+    "hero-contact-button": "Связаться со мной",
+    "about-title": "Обо мне",
+    "about-description-1": "Как цифровой стратег, менеджер проектов и креативный партнер, я более 13 лет руковожу процессами цифровой трансформации.",
+    "about-description-2": "Реализовал множество проектов в области цифровой трансформации, CRM, маркетинга и дизайна. Совмещаю технологии и человеческий подход для усиления цифрового присутствия брендов.",
+    "about-description-3": "Благодаря стратегическому мышлению и аналитическому подходу успешно управляю сложными проектами и веду команды к целям. Всегда ставлю на первое место удовлетворенность клиентов и измеримые результаты.",
+    "about-skill-1-title": "Стратегическое мышление",
+    "about-skill-1-description": "Принятие решений на основе данных и долгосрочное планирование",
+    "about-skill-2-title": "Лидерство в команде",
+    "about-skill-2-description": "Гибкие методологии и мотивация команды",
+    "about-skill-3-title": "Технические знания",
+    "about-skill-3-description": "Опыт работы с цифровыми платформами и программными решениями",
+    "about-skill-4-title": "Ориентация на клиента",
+    "about-skill-4-description": "Приоритет клиентскому опыту и удовлетворенности",
+    "experience-title": "Опыт",
+    "experience-1-title": "Независимый консультант по цифровому маркетингу",
+    "experience-1-date": "2020 – настоящее время",
+    "experience-1-point-1": "Разработка стратегий цифрового маркетинга для малого и среднего бизнеса в различных отраслях",
+    "experience-1-point-2": "Рост продаж на e-commerce платформах на 30%",
+    "experience-1-point-3": "Увеличение органического трафика на 50% благодаря SEO-оптимизации",
+    "experience-1-point-4": "Рост узнаваемости бренда через управление соцсетями и контент-стратегию",
+    "experience-2-title": "GSK – Старший специалист по управлению клиентами",
+    "experience-2-date": "2015 – 2018",
+    "experience-2-point-1": "Снижение жалоб клиентов на 20% за счет оптимизации процессов CRM",
+    "experience-2-point-2": "Достижение 95% годовых целей",
+    "experience-2-point-3": "Руководство маркетинговыми стратегиями на основе анализа клиентских данных",
+    "experience-2-point-4": "Управление 180 аптеками и оценка эффективности",
+    "experience-3-title": "Turkcell – Технический специалист",
+    "experience-3-date": "2009 – 2011",
+    "experience-3-point-1": "Рост продаж смарт-устройств на 15%",
+    "experience-3-point-2": "Повышение эффективности магазинов через обучение команд",
+    "experience-3-point-3": "Оптимизация процессов для улучшения клиентского опыта",
+    "experience-3-point-4": "Координация технического обучения для запуска новых продуктов",
+    "experience-4-title": "Teknosa – Менеджер магазина",
+    "experience-4-date": "2005 – 2008",
+    "experience-4-point-1": "Обеспечение операционной эффективности и оптимизации запасов",
+    "experience-4-point-2": "Рост конверсии посетителей",
+    "experience-4-point-3": "Постоянное достижение целей по продажам и региональное лидерство",
+    "experience-4-point-4": "Формирование корпоративной культуры, ориентированной на клиента",
+    "projects-title": "Проекты",
+    "project-1-title": "Beautiq – Управление салоном красоты",
+    "project-1-date": "2024–2025",
+    "project-1-description": "Комплексное мобильное приложение и система управления для салонов красоты: запись, клиенты, склад.",
+    "project-1-result": "Результат: рост удовлетворенности управлением записей и клиентов на 40%",
+    "project-1-link": "Посмотреть приложение",
+    "project-2-title": "Сайт Antalya Turkuaz",
+    "project-2-date": "2025",
+    "project-2-description": "SEO-оптимизированный корпоративный сайт для Antalya Turkuaz с системами видеонаблюдения, IT-решениями и региональными брендами.",
+    "project-2-result": "Результат: рост органического трафика на 60%, на 30% больше заявок от клиентов",
+    "project-2-link": "Посмотреть сайт",
+    "project-3-title": "Hanedan Konakları – цифровой каталог",
+    "project-3-date": "2024",
+    "project-3-description": "Интерактивный цифровой каталог для элитного жилого комплекса: 3D-визуализация, виртуальные туры, динамические цены.",
+    "project-3-result": "Результат: креативный и престижный каталог, облегчающий работу отдела продаж",
+    "project-3-link": "Посмотреть каталог",
+    "project-4-title": "Değirmen – производственный гид и система обучения",
+    "project-4-date": "2024",
+    "project-4-description": "Комплексный цифровой гид по производственной системе завода. Разработка цифрового контента, обучающих модулей и экзаменов.",
+    "project-4-result": "Результат: сокращение времени обучения сотрудников на 35%, рост успешной сдачи экзаменов до 90% после обучения",
+    "project-4-link": "Посмотреть гид",
+    "skills-title": "Навыки",
+    "skill-1-title": "Стратегический маркетинг",
+    "skill-1-description": "Цифровая стратегия, позиционирование бренда",
+    "skill-2-title": "Цифровая аналитика и CRM",
+    "skill-2-description": "Анализ данных, отношения с клиентами",
+    "skill-3-title": "Управление проектами",
+    "skill-3-description": "Управление процессами, планирование проектов",
+    "skill-4-title": "Графический и веб-дизайн",
+    "skill-4-description": "UI/UX, визуальная коммуникация",
+    "skill-5-title": "SEO и performance-реклама",
+    "skill-5-description": "Google Ads, контент-стратегия",
+    "skill-6-title": "Управление командой и обучение",
+    "skill-6-description": "Лидерство, наставничество",
+    "skill-7-title": "Управление продажами и операциями",
+    "skill-7-description": "Оптимизация процессов, эффективность",
+    "contact-title": "Есть идея проекта?",
+    "contact-description": "Свяжитесь со мной для цифровой трансформации!",
+    "contact-button": "Связаться!",
+    "footer-copyright": "© 2025 Mücahit Özcan. Все права защищены."
+}),
+      no: fillLang(en, {
+      title: "MÜCAHIT ÖZCAN – Ekspert på digital transformasjon og strategisk prosjektleder",
+    "nav-home": "Hjem",
+    "nav-about": "Om meg",
+    "nav-experience": "Erfaring",
+    "nav-projects": "Prosjekter",
+    "nav-skills": "Ferdigheter",
+    "nav-contact": "Kontakt",
+    "hero-title": "<span class='block md:inline'>Med digital kraft</span><br class='md:hidden'><span class='block md:inline'>Strategisk transformasjon</span>",
+    "hero-description": "Med over 13 års erfaring, en støttespiller som hjelper bedrifter å reposisjonere seg i den digitale tidsalderen.",
+    "hero-projects-button": "Se mine prosjekter",
+    "hero-contact-button": "Ta kontakt med meg",
+    "about-title": "Om meg",
+    "about-description-1": "Som digital strateg, prosjektleder og kreativ samarbeidspartner, leder jeg bedrifters digitale transformasjonsprosesser med over 13 års erfaring.",
+    "about-description-2": "Jeg har ledet en rekke prosjekter innen digital transformasjon, CRM, markedsføring og design. Ved å kombinere teknologi med menneskeorienterte tilnærminger, styrker jeg merkevarers digitale tilstedeværelse.",
+    "about-description-3": "Med strategisk tenkning og analytisk tilnærming, leder jeg komplekse prosjekter til suksess og guider team mot mål. Jeg prioriterer kundetilfredshet og målbare resultater i alle prosjekter.",
+    "about-skill-1-title": "Strategisk tenkning",
+    "about-skill-1-description": "Datadrevet beslutningstaking og langsiktig strategisk planlegging",
+    "about-skill-2-title": "Teamledelse",
+    "about-skill-2-description": "Agile metoder og team-motivasjon",
+    "about-skill-3-title": "Teknisk kunnskap",
+    "about-skill-3-description": "Ekspertise i digitale plattformer og programvareløsninger",
+    "about-skill-4-title": "Kundefokus",
+    "about-skill-4-description": "Brukeropplevelse og kundetilfredshet i sentrum",
+    "experience-title": "Erfaring",
+    "experience-1-title": "Frilans digital markedsføringsleder",
+    "experience-1-date": "2020 – nå",
+    "experience-1-point-1": "Utvikling av digitale markedsføringsstrategier for små og mellomstore bedrifter i ulike sektorer",
+    "experience-1-point-2": "Økt salg i e-handelsplattformer med 30 %",
+    "experience-1-point-3": "Opnådde 50 % vekst i organisk rekkevidde gjennom SEO-optimalisering",
+    "experience-1-point-4": "Økt merkevarebevissthet gjennom sosial mediehåndtering og innholdsstrategi",
+    "experience-2-title": "GSK – Senior kundehåndteringsekspert",
+    "experience-2-date": "2015 – 2018",
+    "experience-2-point-1": "Optimalisering av CRM-prosesser førte til 20 % reduksjon i kundeklager",
+    "experience-2-point-2": "Oppnådde 95 % suksessrate i årlige mål",
+    "experience-2-point-3": "Styrt markedsføringsstrategier med kunde-dataanalyse",
+    "experience-2-point-4": "Håndtering og ytelsesevaluering av 180 apotek",
+    "experience-3-title": "Turkcell – Teknologiekspert",
+    "experience-3-date": "2009 – 2011",
+    "experience-3-point-1": "Økte salget av smarte enheter med 15 %",
+    "experience-3-point-2": "Forbedret butikkytelse gjennom teamopplæring",
+    "experience-3-point-3": "Prosessoptimalisering for bedre kundeopplevelse",
+    "experience-3-point-4": "Koordinering av teknisk opplæring for nye produktlanseringer",
+    "experience-4-title": "Teknosa – Butikksjef",
+    "experience-4-date": "2005 – 2008",
+    "experience-4-point-1": "Forbedret operasjonell effektivitet og lageroptimalisering",
+    "experience-4-point-2": "Økt konverteringsrate for besøkende",
+    "experience-4-point-3": "Kontinuerlig suksess i salgsmål og regionale førstepremier",
+    "experience-4-point-4": "Skapte en kundesentrert butikkkultur",
+    "projects-title": "Prosjekter",
+    "project-1-title": "Beautiq – Skjønnhetssalonghåndtering",
+    "project-1-date": "2024–2025",
+    "project-1-description": "En omfattende mobilapp og håndteringssystem for skjønnhetssalonger. Funksjoner for avtale-, kunde- og lagerhåndtering.",
+    "project-1-result": "Resultat: 40 % økning i tilfredshet for avtale- og kundehåndtering",
+    "project-1-link": "Se appen",
+    "project-2-title": "Antalya Turkuaz Nettside",
+    "project-2-date": "2025",
+    "project-2-description": "SEO-vennlig, responsiv bedriftsnettside for Antalya Turkuaz. Optimalisert for sikkerhetskamerasystemer, IT-løsninger og promotering av distribuerte merkevarer.",
+    "project-2-result": "Resultat: 60 % økning i organisk trafikk, 30 % økning i kundehenvendelser",
+    "project-2-link": "Se nettsiden",
+    "project-3-title": "Hanedan Konakları Digital Katalog",
+    "project-3-date": "2024",
+    "project-3-description": "Interaktiv digital katalog for et luksusboligprosjekt. 3D-visualiseringer, virtuelle turer og dynamiske prisingsfunksjoner.",
+    "project-3-result": "Resultat: Kreativ og prestisjefylt katalog som forenklet salgsrepresentanters arbeid",
+    "project-3-link": "Se katalogen",
+    "project-4-title": "Değirmen Fabrikaproduksjonsguide og opplæringssystem",
+    "project-4-date": "2024",
+    "project-4-description": "En omfattende digital guide som detaljert beskriver en fabrikkproduksjonssystem. Utviklet også digitalt innhold, opplæringsmoduler og eksamener for bedriften.",
+    "project-4-result": "Resultat: 35 % reduksjon i opplæringstid for produksjonsprosesser og 90 % økning i eksamenssuksessrate",
+    "project-4-link": "Se guiden",
+    "skills-title": "Ferdigheter",
+    "skill-1-title": "Strategisk markedsføring",
+    "skill-1-description": "Digital strategi, merkevareposisjonering",
+    "skill-2-title": "Digital analyse og CRM",
+    "skill-2-description": "Dataanalyse, kunderelasjoner",
+    "skill-3-title": "Prosjektledelse",
+    "skill-3-description": "Prosesshåndtering, prosjektplanlegging",
+    "skill-4-title": "Grafisk og webdesign",
+    "skill-4-description": "UI/UX, visuell kommunikasjon",
+    "skill-5-title": "SEO og ytelsesannonsering",
+    "skill-5-description": "Google Ads, innholdsstrategi",
+    "skill-6-title": "Teamledelse og opplæring",
+    "skill-6-description": "Lederskap, mentorvirksomhet",
+    "skill-7-title": "Salg og operasjonshåndtering",
+    "skill-7-description": "Prosessoptimalisering, effektivitet",
+    "contact-title": "Har du en prosjektidé?",
+    "contact-description": "Ta kontakt for din digitale transformasjonsreise!",
+    "contact-button": "Kontakt meg!",
+    "footer-copyright": "© 2025 Mücahit Özcan. Alle rettigheter reservert."
+}),
+      nl: fillLang(en, {
+        title: "MÜCAHIT ÖZCAN – Expert in Digitale Transformatie en Strategisch Projectleider",
+    "nav-home": "Home",
+    "nav-about": "Over Mij",
+    "nav-experience": "Ervaring",
+    "nav-projects": "Projecten",
+    "nav-skills": "Vaardigheden",
+    "nav-contact": "Contact",
+    "hero-title": "<span class='block md:inline'>Met Digitale Kracht</span><br class='md:hidden'><span class='block md:inline'>Strategische Transformatie</span>",
+    "hero-description": "Met meer dan 13 jaar ervaring, een partner die bedrijven helpt zich te herpositioneren in het digitale tijdperk.",
+    "hero-projects-button": "Bekijk Mijn Projecten",
+    "hero-contact-button": "Neem Contact Met Mij Op",
+    "about-title": "Over Mij",
+    "about-description-1": "Als digitale strateeg, projectmanager en creatieve partner leid ik al meer dan 13 jaar de digitale transformatieprocessen van bedrijven.",
+    "about-description-2": "Ik heb talloze projecten geleid op het gebied van digitale transformatie, CRM, marketing en design. Door technologie te combineren met mensgerichte benaderingen, versterk ik de digitale aanwezigheid van merken.",
+    "about-description-3": "Met een strategische mindset en analytische aanpak leid ik complexe projecten naar succes en stuur ik teams naar hun doelen. In elk project staan klanttevredenheid en meetbare resultaten centraal.",
+    "about-skill-1-title": "Strategisch Denken",
+    "about-skill-1-description": "Datagedreven besluitvorming en langetermijnstrategische planning",
+    "about-skill-2-title": "Teamleiderschap",
+    "about-skill-2-description": "Agile managementmethodologieën en teammotivatie",
+    "about-skill-3-title": "Technische Kennis",
+    "about-skill-3-description": "Expertise in digitale platforms en softwareoplossingen",
+    "about-skill-4-title": "Klantgerichtheid",
+    "about-skill-4-description": "Gebruikerservaring en klanttevredenheid als prioriteit",
+    "experience-title": "Ervaring",
+    "experience-1-title": "Freelance Digitale Marketingmanager",
+    "experience-1-date": "2020 – heden",
+    "experience-1-point-1": "Ontwikkeling van digitale marketingstrategieën voor MKB's in diverse sectoren",
+    "experience-1-point-2": "Realiseren van 30% omzetgroei op e-commerceplatforms",
+    "experience-1-point-3": "Behalen van 50% groei in organisch bereik door SEO-optimalisatie",
+    "experience-1-point-4": "Verhogen van merkbekendheid via social media beheer en contentstrategie",
+    "experience-2-title": "GSK – Senior Klantbeheer Specialist",
+    "experience-2-date": "2015 – 2018",
+    "experience-2-point-1": "Optimalisatie van CRM-processen leidde tot 20% afname in klantklachten",
+    "experience-2-point-2": "Behalen van 95% succesratio in jaarlijkse doelen",
+    "experience-2-point-3": "Sturen van marketingstrategieën met klantdata-analyse",
+    "experience-2-point-4": "Beheer en prestatie-evaluatie van 180 apotheken",
+    "experience-3-title": "Turkcell – Technologie Specialist",
+    "experience-3-date": "2009 – 2011",
+    "experience-3-point-1": "Verhogen van de verkoop van slimme apparaten met 15%",
+    "experience-3-point-2": "Verbeteren van winkelprestaties door teamtrainingen",
+    "experience-3-point-3": "Procesoptimalisatie voor betere klantervaring",
+    "experience-3-point-4": "Coördinatie van technische trainingen voor nieuwe productlanceringen",
+    "experience-4-title": "Teknosa – Winkelmanager",
+    "experience-4-date": "2005 – 2008",
+    "experience-4-point-1": "Verbeteren van operationele efficiëntie en voorraadoptimalisatie",
+    "experience-4-point-2": "Verhogen van de conversieratio van bezoekers",
+    "experience-4-point-3": "Continue succes in verkoopdoelen en regionale eerste plaatsen",
+    "experience-4-point-4": "Creëren van een klantgerichte winkcultuur",
+    "projects-title": "Projecten",
+    "project-1-title": "Beautiq – Beheer van Schoonheidssalons",
+    "project-1-date": "2024–2025",
+    "project-1-description": "Een uitgebreide mobiele app en beheersysteem voor schoonheidssalons. Functionaliteiten voor afspraken, klant- en voorraadbeheer.",
+    "project-1-result": "Resultaat: 40% toename in tevredenheid over afspraken- en klantbeheer",
+    "project-1-link": "Bekijk de App",
+    "project-2-title": "Antalya Turkuaz Website",
+    "project-2-date": "2025",
+    "project-2-description": "SEO-vriendelijke, responsive bedrijfswebsite voor Antalya Turkuaz. Geoptimaliseerd voor beveiligingscamerasystemen, IT-oplossingen en promotie van gedistribueerde merken.",
+    "project-2-result": "Resultaat: 60% toename in organisch verkeer, 30% toename in klantverzoeken",
+    "project-2-link": "Bekijk de Website",
+    "project-3-title": "Hanedan Konakları Digitale Catalogus",
+    "project-3-date": "2024",
+    "project-3-description": "Interactieve digitale catalogus voor een luxe woningproject. 3D-visualisaties, virtuele rondleidingen en dynamische prijsfuncties.",
+    "project-3-result": "Resultaat: Creatieve en prestigieuze catalogus die het werk van verkoopvertegenwoordigers vereenvoudigde",
+    "project-3-link": "Bekijk de Catalogus",
+    "project-4-title": "Değirmen Fabriek Productiegids en Trainingssysteem",
+    "project-4-date": "2024",
+    "project-4-description": "Een uitgebreide digitale gids die het productiesysteem van een fabriek gedetailleerd beschrijft. Daarnaast ontwikkeld digitale inhoud, trainingsmodules en examens voor het bedrijf.",
+    "project-4-result": "Resultaat: 35% reductie in trainingstijd voor productieprocessen en 90% toename in examen slagingspercentage",
+    "project-4-link": "Bekijk de Gids",
+    "skills-title": "Vaardigheden",
+    "skill-1-title": "Strategische Marketing",
+    "skill-1-description": "Digitale strategie, merkpositionering",
+    "skill-2-title": "Digitale Analyse en CRM",
+    "skill-2-description": "Data-analyse, klantrelaties",
+    "skill-3-title": "Projectmanagement",
+    "skill-3-description": "Procesbeheer, projectplanning",
+    "skill-4-title": "Grafisch en Webdesign",
+    "skill-4-description": "UI/UX, visuele communicatie",
+    "skill-5-title": "SEO en Prestatieadvertenties",
+    "skill-5-description": "Google Ads, contentstrategie",
+    "skill-6-title": "Teammanagement en Training",
+    "skill-6-description": "Leiderschap, mentoring",
+    "skill-7-title": "Verkoop en Operationeel Beheer",
+    "skill-7-description": "Procesoptimalisatie, efficiëntie",
+    "contact-title": "Heb je een projectidee?",
+    "contact-description": "Neem contact op voor jouw digitale transformatietraject!",
+    "contact-button": "Neem Contact Op!",
+    "footer-copyright": "© 2025 Mücahit Özcan. Alle rechten voorbehouden."
+}),
+      sv: fillLang(en, {
+        title: "MÜCAHIT ÖZCAN – Expert på digital transformation och strategisk projektledare",
+    "nav-home": "Hem",
+    "nav-about": "Om mig",
+    "nav-experience": "Erfarenhet",
+    "nav-projects": "Projekt",
+    "nav-skills": "Färdigheter",
+    "nav-contact": "Kontakt",
+    "hero-title": "<span class='block md:inline'>Med digital kraft</span><br class='md:hidden'><span class='block md:inline'>Strategisk transformation</span>",
+    "hero-description": "Med över 13 års erfarenhet, en partner som hjälper företag att ompositionera sig i den digitala eran.",
+    "hero-projects-button": "Se mina projekt",
+    "hero-contact-button": "Kontakta mig",
+    "about-title": "Om mig",
+    "about-description-1": "Som digital strateg, projektledare och kreativ partner leder jag företags digitala transformationsprocesser med över 13 års erfarenhet.",
+    "about-description-2": "Jag har lett många projekt inom digital transformation, CRM, marknadsföring och design. Genom att kombinera teknologi med människoorienterade tillvägagångssätt stärker jag varumärkens digitala närvaro.",
+    "about-description-3": "Med strategiskt tänkande och analytisk approach leder jag komplexa projekt till framgång och guidar team mot sina mål. Jag prioriterar kundnöjdhet och mätbara resultat i alla projekt.",
+    "about-skill-1-title": "Strategiskt tänkande",
+    "about-skill-1-description": "Datadrivet beslutsfattande och långsiktig strategisk planering",
+    "about-skill-2-title": "Teamledarskap",
+    "about-skill-2-description": "Agila metoder och team-motivation",
+    "about-skill-3-title": "Teknisk kunskap",
+    "about-skill-3-description": "Expertis inom digitala plattformar och mjukvarulösningar",
+    "about-skill-4-title": "Kundfokusering",
+    "about-skill-4-description": "Användarupplevelse och kundnöjdhet i fokus",
+    "experience-title": "Erfarenhet",
+    "experience-1-title": "Frilansande digital marknadsföringschef",
+    "experience-1-date": "2020 – nu",
+    "experience-1-point-1": "Utveckling av digitala marknadsföringsstrategier för små och medelstora företag i olika sektorer",
+    "experience-1-point-2": "Ökade försäljningen på e-handelsplattformar med 30 %",
+    "experience-1-point-3": "Uppnådde 50 % tillväxt i organisk räckvidd genom SEO-optimering",
+    "experience-1-point-4": "Ökade varumärkeskännedom genom hantering av sociala medier och innehållsstrategi",
+    "experience-2-title": "GSK – Senior kundhanteringsspecialist",
+    "experience-2-date": "2015 – 2018",
+    "experience-2-point-1": "Optimering av CRM-processer ledde till 20 % minskning av kundklagomål",
+    "experience-2-point-2": "Uppnådde 95 % framgångsgrad i årliga mål",
+    "experience-2-point-3": "Styrde marknadsföringsstrategier med kunddataanalys",
+    "experience-2-point-4": "Hantering och prestationsutvärdering av 180 apotek",
+    "experience-3-title": "Turkcell – Teknikspecialist",
+    "experience-3-date": "2009 – 2011",
+    "experience-3-point-1": "Ökade försäljningen av smarta enheter med 15 %",
+    "experience-3-point-2": "Förbättrade butiksprestanda genom teamutbildningar",
+    "experience-3-point-3": "Processoptimering för bättre kundupplevelse",
+    "experience-3-point-4": "Koordinering av tekniska utbildningar för nya produktlanseringar",
+    "experience-4-title": "Teknosa – Butikschef",
+    "experience-4-date": "2005 – 2008",
+    "experience-4-point-1": "Förbättrade operationell effektivitet och lageroptimering",
+    "experience-4-point-2": "Ökade konverteringsgraden för besökare",
+    "experience-4-point-3": "Kontinuerlig framgång i försäljningsmål och regionala förstaplatser",
+    "experience-4-point-4": "Skapade en kundcentrerad butikskultur",
+    "projects-title": "Projekt",
+    "project-1-title": "Beautiq – Hantering av skönhetssalonger",
+    "project-1-date": "2024–2025",
+    "project-1-description": "En omfattande mobilapp och hanteringssystem för skönhetssalonger. Funktioner för bokningar, kund- och lagerhantering.",
+    "project-1-result": "Resultat: 40 % ökning i nöjdhet för boknings- och kundhantering",
+    "project-1-link": "Se appen",
+    "project-2-title": "Antalya Turkuaz Webbplats",
+    "project-2-date": "2025",
+    "project-2-description": "SEO-vänlig, responsiv företagswebbplats för Antalya Turkuaz. Optimerad för säkerhetskamerasystem, IT-lösningar och marknadsföring av distribuerade varumärken.",
+    "project-2-result": "Resultat: 60 % ökning i organisk trafik, 30 % ökning i kundförfrågningar",
+    "project-2-link": "Se webbplatsen",
+    "project-3-title": "Hanedan Konakları Digital Katalog",
+    "project-3-date": "2024",
+    "project-3-description": "Interaktiv digital katalog för ett lyxigt bostadsprojekt. 3D-visualiseringar, virtuella turer och dynamiska prisfunktioner.",
+    "project-3-result": "Resultat: Kreativ och prestigefylld katalog som underlättade arbetet för säljrepresentanter",
+    "project-3-link": "Se katalogen",
+    "project-4-title": "Değirmen Fabrik Produktionsguide och Utbildningssystem",
+    "project-4-date": "2024",
+    "project-4-description": "En omfattande digital guide som beskriver ett fabriksproduktionssystem i detalj. Utvecklade även digitalt innehåll, utbildningsmoduler och prov för företaget.",
+    "project-4-result": "Resultat: 35 % minskning i utbildningstid för produktionsprocesser och 90 % ökning i provframgång",
+    "project-4-link": "Se guiden",
+    "skills-title": "Färdigheter",
+    "skill-1-title": "Strategisk marknadsföring",
+    "skill-1-description": "Digital strategi, varumärkespositionering",
+    "skill-2-title": "Digital analys och CRM",
+    "skill-2-description": "Dataanalys, kundrelationer",
+    "skill-3-title": "Projektledning",
+    "skill-3-description": "Processhantering, projektplanering",
+    "skill-4-title": "Grafisk och webbdesign",
+    "skill-4-description": "UI/UX, visuell kommunikation",
+    "skill-5-title": "SEO och prestationsannonsering",
+    "skill-5-description": "Google Ads, innehållsstrategi",
+    "skill-6-title": "Teamledning och utbildning",
+    "skill-6-description": "Ledarskap, mentorskap",
+    "skill-7-title": "Försäljning och operativ hantering",
+    "skill-7-description": "Processoptimering, effektivitet",
+    "contact-title": "Har du en projektidé?",
+    "contact-description": "Kontakta mig för din digitala transformationsresa!",
+    "contact-button": "Kontakta mig!",
+    "footer-copyright": "© 2025 Mücahit Özcan. Alla rättigheter förbehållna."
+}),
+      fi: fillLang(en, {
+        title: "MÜCAHIT ÖZCAN – Digitaalisen muutoksen asiantuntija ja strateginen projektijohtaja",
+    "nav-home": "Etusivu",
+    "nav-about": "Minusta",
+    "nav-experience": "Kokemus",
+    "nav-projects": "Projektit",
+    "nav-skills": "Taidot",
+    "nav-contact": "Yhteystiedot",
+    "hero-title": "<span class='block md:inline'>Digitaalisella voimalla</span><br class='md:hidden'><span class='block md:inline'>Strateginen muutos</span>",
+    "hero-description": "Yli 13 vuoden kokemuksella autan yrityksiä uudelleen sijoittumaan digitaalisessa aikakaudessa.",
+    "hero-projects-button": "Tutustu projekteihini",
+    "hero-contact-button": "Ota minuun yhteyttä",
+    "about-title": "Minusta",
+    "about-description-1": "Digitaalisena strategina, projektipäällikkönä ja luovana kumppanina johdan yritysten digitaalisia muutosprosesseja yli 13 vuoden kokemuksella.",
+    "about-description-2": "Olen johtanut lukuisia projekteja digitaalisen muutoksen, CRM:n, markkinoinnin ja suunnittelun alalla. Yhdistämällä teknologiaa ja ihmiskeskeisiä lähestymistapoja vahvistan brändien digitaalista läsnäoloa.",
+    "about-description-3": "Strategisella ajattelutavalla ja analyyttisella lähestymistavalla johdan monimutkaisia projekteja menestykseen ja ohjaan tiimejä kohti niiden tavoitteita. Pidän asiakastyytyväisyyden ja mitattavat tulokset etusijalla jokaisessa projektissa.",
+    "about-skill-1-title": "Strateginen ajattelu",
+    "about-skill-1-description": "Datapohjainen päätöksenteko ja pitkäaikainen strateginen suunnittelu",
+    "about-skill-2-title": "Tiimin johtaminen",
+    "about-skill-2-description": "Ketterät johtamismenetelmät ja tiimin motivointi",
+    "about-skill-3-title": "Tekninen osaaminen",
+    "about-skill-3-description": "Asiantuntemus digitaalisissa alustoissa ja ohjelmistoratkaisuissa",
+    "about-skill-4-title": "Asiakaslähtöisyys",
+    "about-skill-4-description": "Käyttäjäkokemus ja asiakastyytyväisyys keskiössä",
+    "experience-title": "Kokemus",
+    "experience-1-title": "Freelance digitaalisen markkinoinnin johtaja",
+    "experience-1-date": "2020 – nykyhetki",
+    "experience-1-point-1": "Digitaalisten markkinointistrategioiden kehittäminen eri alojen pk-yrityksille",
+    "experience-1-point-2": "Myynnin kasvattaminen verkkokauppa-alustoilla 30 %",
+    "experience-1-point-3": "50 % kasvun saavuttaminen orgaanisessa näkyvyydessä SEO-optimoinnilla",
+    "experience-1-point-4": "Bränditunnettuuden lisääminen sosiaalisen median hallinnalla ja sisältöstrategialla",
+    "experience-2-title": "GSK – Vanhempi asiakkuudenhallinta-asiantuntija",
+    "experience-2-date": "2015 – 2018",
+    "experience-2-point-1": "CRM-prosessien optimointi vähensi asiakaspalautteita 20 %",
+    "experience-2-point-2": "95 % onnistumisaste vuositavoitteissa",
+    "experience-2-point-3": "Markkinointistrategioiden ohjaaminen asiakastietoanalyysillä",
+    "experience-2-point-4": "180 apteekin hallinta ja suorituskyvyn arviointi",
+    "experience-3-title": "Turkcell – Teknologia-asiantuntija",
+    "experience-3-date": "2009 – 2011",
+    "experience-3-point-1": "Älylaitteiden myynnin kasvattaminen 15 %",
+    "experience-3-point-2": "Myymälän suorituskyvyn parantaminen tiimikoulutuksilla",
+    "experience-3-point-3": "Prosessien optimointi paremman asiakaskokemuksen saavuttamiseksi",
+    "experience-3-point-4": "Uusien tuotelanseerausten teknisten koulutusten koordinointi",
+    "experience-4-title": "Teknosa – Myymäläpäällikkö",
+    "experience-4-date": "2005 – 2008",
+    "experience-4-point-1": "Toiminnallinen tehokkuus ja varaston optimointi",
+    "experience-4-point-2": "Kävijöiden konversioasteen kasvattaminen",
+    "experience-4-point-3": "Jatkuva menestys myyntitavoitteissa ja alueelliset ykkössijat",
+    "experience-4-point-4": "Asiakastyytyväisyyteen keskittyvän myymäläkulttuurin luominen",
+    "projects-title": "Projektit",
+    "project-1-title": "Beautiq – Kauneushoitolan hallinta",
+    "project-1-date": "2024–2025",
+    "project-1-description": "Kattava mobiilisovellus ja hallintajärjestelmä kauneushoitoloille. Toiminnot ajanvaraukseen, asiakas- ja varastonhallintaan.",
+    "project-1-result": "Tulos: 40 % kasvu tyytyväisyydessä ajanvaraus- ja asiakaspalveluun",
+    "project-1-link": "Tutustu sovellukseen",
+    "project-2-title": "Antalya Turkuaz -verkkosivusto",
+    "project-2-date": "2025",
+    "project-2-description": "SEO-yhteensopiva, responsiivinen yritysverkkosivusto Antalya Turkuazille. Optimoitu turvakamerajärjestelmille, IT-ratkaisuille ja jakelumerkkien esittelyyn.",
+    "project-2-result": "Tulos: 60 % kasvu orgaanisessa liikenteessä, 30 % kasvu asiakaspyynnöissä",
+    "project-2-link": "Tutustu verkkosivustoon",
+    "project-3-title": "Hanedan Konakları Digitaalinen Katalogi",
+    "project-3-date": "2024",
+    "project-3-description": "Interaktiivinen digitaalinen katalogi luksusasuntoprojektille. 3D-visualisoinnit, virtuaalikierrokset ja dynaamiset hinnoitteluominaisuudet.",
+    "project-3-result": "Tulos: Luova ja arvostettu katalogi, joka helpotti myyntiedustajien työtä",
+    "project-3-link": "Tutustu katalogiin",
+    "project-4-title": "Değirmen Tehdas Tuotanto-opas ja Koulutusjärjestelmä",
+    "project-4-date": "2024",
+    "project-4-description": "Kattava digitaalinen opas, joka kuvaa tehtaan tuotantojärjestelmän yksityiskohtaisesti. Lisäksi kehitettiin digitaalista sisältöä, koulutusmoduuleja ja kokeita yritykselle.",
+    "project-4-result": "Tulos: 35 % vähennys koulutusaikassa tuotantoprosesseihin ja 90 % kasvu koemenestyksessä",
+    "project-4-link": "Tutustu oppaaseen",
+    "skills-title": "Taidot",
+    "skill-1-title": "Strateginen markkinointi",
+    "skill-1-description": "Digitaalinen strategia, brändin asemointi",
+    "skill-2-title": "Digitaalinen analytiikka ja CRM",
+    "skill-2-description": "Data-analyysi, asiakassuhteet",
+    "skill-3-title": "Projektinhallinta",
+    "skill-3-description": "Prosessinhallinta, projektisuunnittelu",
+    "skill-4-title": "Graafinen ja verkkosuunnittelu",
+    "skill-4-description": "UI/UX, visuaalinen viestintä",
+    "skill-5-title": "SEO ja suorituskykymainonta",
+    "skill-5-description": "Google Ads, sisältöstrategia",
+    "skill-6-title": "Tiiminhallinta ja koulutus",
+    "skill-6-description": "Johtajuus, mentorointi",
+    "skill-7-title": "Myynti ja operatiivinen hallinta",
+    "skill-7-description": "Prosessien optimointi, tehokkuus",
+    "contact-title": "Onko sinulla projekti-idea?",
+    "contact-description": "Ota yhteyttä digitaalisen muutosmatkasi tueksi!",
+    "contact-button": "Ota yhteyttä!",
+    "footer-copyright": "© 2025 Mücahit Özcan. Kaikki oikeudet pidätetään."
+})
+    };
+    const languageButton = document.querySelector('.language-button');
+    const languageMenu = document.querySelector('.language-menu');
+    const languageItems = document.querySelectorAll('.language-item');
+    const currentLangSpan = document.getElementById('current-lang');
+    let currentLanguage = localStorage.getItem('language') || 'tr';
+    function updateLanguage(lang) {
+        const elements = document.querySelectorAll('[data-lang]');
+        elements.forEach(element => {
+            const key = element.getAttribute('data-lang');
+            if (languages[lang][key]) {
+                element.innerHTML = languages[lang][key];
+            } else {
+                element.innerHTML = '';
+            }
+        });
+        document.documentElement.lang = lang;
+        currentLangSpan.textContent = lang.toUpperCase();
+        localStorage.setItem('language', lang);
+        currentLanguage = lang;
+        document.title = languages[lang].title;
+    }
+    languageButton.addEventListener('click', () => {
+        languageMenu.classList.toggle('show');
+    });
+    languageItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const lang = item.getAttribute('data-lang-code');
+            updateLanguage(lang);
+            languageMenu.classList.remove('show');
+        });
+    });
+    document.addEventListener('click', (e) => {
+        if (!languageButton.contains(e.target) && !languageMenu.contains(e.target)) {
+            languageMenu.classList.remove('show');
+        }
+    });
+    updateLanguage(currentLanguage);
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const texts = [
+    "Dijital Dönüşüm Uzmanı",
+    "Stratejik Proje Lideri",
+    "Yaratıcı Çözüm Ortağı"
+  ];
+  let i = 0, j = 0, current = '', isDeleting = false;
+  const el = document.getElementById('typewriter');
+  function type() {
+    if (!el) return;
+    if (!isDeleting && j <= texts[i].length) {
+      current = texts[i].substring(0, j++);
+      el.textContent = current;
+      setTimeout(type, 80);
+    } else if (isDeleting && j >= 0) {
+      current = texts[i].substring(0, j--);
+      el.textContent = current;
+      setTimeout(type, 40);
+    } else {
+      isDeleting = !isDeleting;
+      if (!isDeleting) i = (i + 1) % texts.length;
+      setTimeout(type, 1000);
+    }
+  }
+  type();
+});
+</script>
+<script src="https://unpkg.com/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  VanillaTilt.init(document.querySelectorAll('.skill-card, .project-card'), {
+    max: 15,
+    speed: 400,
+    glare: true,
+    "max-glare": 0.2,
+  });
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.stat-number').forEach(function(el) {
+    let end = parseInt(el.dataset.value, 10);
+    let start = 0;
+    let duration = 1500;
+    let startTime = null;
+    function animateNumber(timestamp) {
+      if (!startTime) startTime = timestamp;
+      let progress = Math.min((timestamp - startTime) / duration, 1);
+      el.textContent = Math.floor(progress * (end - start) + start);
+      if (progress < 1) requestAnimationFrame(animateNumber);
+      else el.textContent = end;
+    }
+    requestAnimationFrame(animateNumber);
+  });
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (window.VANTA) {
+    VANTA.WAVES({
+      el: "#vanta-hero",
+      mouseControls: true,
+      touchControls: true,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0x1E3A8A,
+      shininess: 40.00,
+      waveHeight: 18.00,
+      waveSpeed: 0.6,
+      zoom: 0.95,
+      backgroundColor: 0x0A1F44,
+      opacity: 0.7
+    });
+  }
+});
+</script>
+</body>
+</html>
